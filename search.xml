@@ -37,6 +37,12 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> ACG体验 </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -65,7 +71,7 @@
       <link href="/2023/08/12/%E4%BA%92%E6%96%A5%E6%A6%82%E5%BF%B5%E5%85%B3%E5%8D%A1%E6%BC%94%E7%A4%BA/"/>
       <url>/2023/08/12/%E4%BA%92%E6%96%A5%E6%A6%82%E5%BF%B5%E5%85%B3%E5%8D%A1%E6%BC%94%E7%A4%BA/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>—-视频演示</p><p>通过sequence的方式表达互斥通路的概念，并围绕互斥通路建立关卡。</p><iframe src="//player.bilibili.com/player.html?aid=362159343&bvid=BV1W94y1k7hq&cid=1230990239&page=1&high_quality=1&danmaku=0"allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"screenshot":"yes","video":{"url":"/2023/08/12/互斥概念关卡演示/media8.mp4","pic":"1.png"},"danmaku":{"api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><p>1.引入解救水晶的概念，水晶是一个会自主移动并能改变关卡连通状态，启动机关的设定。<br>2.玩家会阶段性的解救水晶，并跟随水晶直到它到达终点。<br>3.水晶和互斥通路结构相关，玩家打开一条通路，这条通路终点对应的水晶会被封存（参考上一个视频）。玩家需要在通路被关闭的条件下解救对应水晶。</p><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","loop":true,"screenshot":"yes","video":{"url":"/2023/08/12/互斥概念关卡演示/media9.mp4","pic":"1.png"},"danmaku":{"api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><p>护送水晶过程中插入简易玩法优化玩家过程体验。<br>记忆一笔画玩法：玩家需要在sequence过程中记录路径并以一笔画方式通过道路</p><div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"theme":"#FADFA3","loop":true,"screenshot":"yes","video":{"url":"/2023/08/12/互斥概念关卡演示/media10.mp4","pic":"1.png"},"danmaku":{"api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><p>寻找水晶过程中插入简易玩法优化玩家跑图体验。<br>同色板玩法：玩家每次踩格子会将格子改变为另一个颜色，万家需要将所有格子踩为同一颜色。</p><div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"theme":"#FADFA3","loop":true,"screenshot":"yes","video":{"url":"/2023/08/12/互斥概念关卡演示/media11.mp4","pic":"1.png"},"danmaku":{"api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>—-视频演示</p><p>设计文档见关卡实践分类</p><p>通过sequence的方式表达互斥通路的概念，并围绕互斥通路建立关卡。</p><iframe src="//player.bilibili.com/player.html?aid=362159343&bvid=BV1W94y1k7hq&cid=1230990239&page=1&high_quality=1&danmaku=0"allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>1.引入解救水晶的概念，水晶是一个会自主移动并能改变关卡连通状态，启动机关的设定。2.玩家会阶段性的解救水晶，并跟随水晶直到它到达终点。3.水晶和互斥通路结构相关，玩家打开一条通路，这条通路终点对应的水晶会被封存（参考上一个视频）。玩家需要在通路被关闭的条件下解救对应水晶。<iframe src="//player.bilibili.com/player.html?aid=617142726&bvid=BV1m84y1Z7Ta&cid=1230990043&page=1&high_quality=1&danmaku=0"allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe><p>护送水晶过程中插入简易玩法优化玩家过程体验。<br>记忆一笔画玩法：玩家需要在sequence过程中记录路径并以一笔画方式通过道路</p><iframe src="//player.bilibili.com/player.html?aid=914650439&bvid=BV16u4y1i7ZM&cid=1230990241&page=1&high_quality=1&danmaku=0"allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe><p>寻找水晶过程中插入简易玩法优化玩家跑图体验。<br>同色板玩法：玩家每次踩格子会将格子改变为另一个颜色，万家需要将所有格子踩为同一颜色。</p><iframe src="//player.bilibili.com/player.html?aid=702157496&bvid=BV1qm4y1p7Ca&cid=1230990051&page=1&high_quality=1&danmaku=0"allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>]]></content>
       
       
       <categories>
@@ -84,7 +90,7 @@
       <link href="/2023/08/12/%E7%94%B5%E8%B7%AF%E7%8E%A9%E6%B3%95%E6%BC%94%E7%A4%BA/"/>
       <url>/2023/08/12/%E7%94%B5%E8%B7%AF%E7%8E%A9%E6%B3%95%E6%BC%94%E7%A4%BA/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>—-视频演示</p><p>玩家仅能改变继电器的位置和状态，以此手段，让电路从起点到终点连通。</p><div id="dplayer6" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer6"),"theme":"#FADFA3","loop":true,"screenshot":"yes","video":{"url":"/2023/08/12/电路玩法演示/media6.mp4","pic":"1.png"},"danmaku":{"api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><div id="dplayer7" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer7"),"theme":"#FADFA3","loop":true,"screenshot":"yes","video":{"url":"/2023/08/12/电路玩法演示/media7.mp4","pic":"1.png"},"danmaku":{"api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>—-视频演示</p><p>设计文档见关卡实践分类</p><p>玩家仅能改变继电器的位置和状态，以此手段，让电路从起点到终点连通。</p><iframe src="//player.bilibili.com/player.html?aid=999818460&bvid=BV1vx4y1f7dy&cid=1234874411&page=1&high_quality=1&danmaku=0"allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe><iframe src="//player.bilibili.com/player.html?aid=489778854&bvid=BV18N411z7rx&cid=1234874231&page=1&high_quality=1&danmaku=0"allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>]]></content>
       
       
       <categories>
@@ -103,7 +109,7 @@
       <link href="/2023/08/12/%E4%BB%99%E4%BA%BA%E6%B4%9E%E5%BA%9C/"/>
       <url>/2023/08/12/%E4%BB%99%E4%BA%BA%E6%B4%9E%E5%BA%9C/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>—-视频演示</p><p>将钥匙概念包装化，设想为仙人洞府解密场景，尝试搭建关卡。</p><div id="dplayer4" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer4"),"theme":"#FADFA3","loop":true,"screenshot":"yes","video":{"url":"/2023/08/12/仙人洞府/media4.mp4","pic":"1.png"},"danmaku":{"api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><div id="dplayer5" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer5"),"theme":"#FADFA3","loop":true,"screenshot":"yes","video":{"url":"/2023/08/12/仙人洞府/media5.mp4","pic":"1.png"},"danmaku":{"api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>—-视频演示</p><p>设计文档见关卡实践分类</p><p>将钥匙概念包装化，设想为仙人洞府解密场景，尝试搭建关卡。</p><iframe src="//player.bilibili.com/player.html?aid=957338219&bvid=BV1wp4y137MY&cid=1234874223&page=1&high_quality=1&danmaku=0"allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe><iframe src="//player.bilibili.com/player.html?aid=957311051&bvid=BV1Qp4y1g7Dh&cid=1234874326&page=1&high_quality=1&danmaku=0"allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>]]></content>
       
       
       <categories>
@@ -122,7 +128,7 @@
       <link href="/2023/08/12/%E9%92%A5%E5%8C%99%E6%A6%82%E5%BF%B5%E7%8E%A9%E6%B3%95%E6%BC%94%E7%A4%BA/"/>
       <url>/2023/08/12/%E9%92%A5%E5%8C%99%E6%A6%82%E5%BF%B5%E7%8E%A9%E6%B3%95%E6%BC%94%E7%A4%BA/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>—-视频演示</p><p>①钥匙和锁作为达成玩法目标的基础概念。<br>②拓展1：多把钥匙对应需要多把钥匙的锁，考验玩家对钥匙资源的分配规划能力。</p><div id="dplayer8" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer8"),"theme":"#FADFA3","loop":true,"screenshot":"yes","video":{"url":"/2023/08/12/钥匙概念玩法演示/media1.mp4","pic":"1.png"},"danmaku":{"api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><p>③拓展2：存在这样一种锁，可以每插入一把钥匙都产生一个阶段性的变化—-钥匙和旋转房间机制的结合。</p><div id="dplayer9" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer9"),"theme":"#FADFA3","loop":true,"screenshot":"yes","video":{"url":"/2023/08/12/钥匙概念玩法演示/media2.mp4","pic":"1.png"},"danmaku":{"api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><p>④拓展3：钥匙和旋转场地的结合。</p><div id="dplayer10" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer10"),"theme":"#FADFA3","loop":true,"screenshot":"yes","video":{"url":"/2023/08/12/钥匙概念玩法演示/media3.mp4","pic":"1.png"},"danmaku":{"api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>—-视频演示</p><p>设计文档见关卡实践分类</p><p>①钥匙和锁作为达成玩法目标的基础概念。<br>②拓展1：多把钥匙对应需要多把钥匙的锁，考验玩家对钥匙资源的分配规划能力。</p><iframe src="//player.bilibili.com/player.html?aid=872321610&bvid=BV1ZV4y1Y7o3&cid=1234874420&page=1&high_quality=1&danmaku=0"allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe><p>③拓展2：存在这样一种锁，可以每插入一把钥匙都产生一个阶段性的变化—-钥匙和旋转房间机制的结合。</p><iframe src="//player.bilibili.com/player.html?aid=659874794&bvid=BV1ah4y1S7px&cid=1234874238&page=1&high_quality=1&danmaku=0"allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe><p>④拓展3：钥匙和旋转场地的结合。</p><iframe src="//player.bilibili.com/player.html?aid=317330619&bvid=BV1HP411s7LK&cid=1234874339&page=1&high_quality=1&danmaku=0"allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>]]></content>
       
       
       <categories>
@@ -300,6 +306,12 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> 系统设计 </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -341,6 +353,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 系统设计 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -405,6 +423,12 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> 调研 </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -425,6 +449,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 工具使用 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -447,6 +477,12 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> 工具使用 </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -467,6 +503,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 系统设计 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -489,6 +531,12 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> 系统设计 </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -509,6 +557,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 流程 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -558,7 +612,7 @@
       
         <tags>
             
-            <tag> 游戏设计 </tag>
+            <tag> 系统设计 </tag>
             
         </tags>
       
@@ -583,9 +637,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
       
@@ -594,9 +648,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
       
