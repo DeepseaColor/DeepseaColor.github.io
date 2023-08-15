@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>sequence制作及优化 | 深海酒馆</title><meta name="author" content="Lvjunhao"><meta name="copyright" content="Lvjunhao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="*一、Sequence动画制作**1 新建sequence文件*· 方式如下图：中文名为关卡序列  · 也可以复制之前的sequence（推荐使用该方法），它能让你配置得更快。  o 参考如下路径（里面包含最早一批制作的sequence）：depot_pj\trunk\client\Content\Product\ResourcesStatic\ArtResources\Animations\Sh">
+<meta property="og:type" content="article">
+<meta property="og:title" content="sequence制作及优化">
+<meta property="og:url" content="http://deepseacolor.github.io/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/index.html">
+<meta property="og:site_name" content="深海酒馆">
+<meta property="og:description" content="*一、Sequence动画制作**1 新建sequence文件*· 方式如下图：中文名为关卡序列  · 也可以复制之前的sequence（推荐使用该方法），它能让你配置得更快。  o 参考如下路径（里面包含最早一批制作的sequence）：depot_pj\trunk\client\Content\Product\ResourcesStatic\ArtResources\Animations\Sh">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic.imgdb.cn/item/64dae3c81ddac507cc8d5ae0.png">
+<meta property="article:published_time" content="2023-08-10T08:57:39.000Z">
+<meta property="article:modified_time" content="2023-08-11T06:24:37.015Z">
+<meta property="article:author" content="Lvjunhao">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/64dae3c81ddac507cc8d5ae0.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://deepseacolor.github.io/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'sequence制作及优化',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-08-11 14:24:37'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.bing.com/th/id/OGC.bc159a29881425e3e8814868e240dafb?pid=1.7&amp;rurl=https%3a%2f%2fimg.siyuetian.net%2fsytconimg%2f2022%2f07%2f070414325483424.gif&amp;ehk=qp0v38QaAxsFF6JwQUZxPLZ%2b6aOYirVPpNz8%2bOI86cs%3d" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.imgdb.cn/item/64dae3c81ddac507cc8d5ae0.png')"><nav id="nav"><span id="blog-info"><a href="/" title="深海酒馆"><span class="site-name">深海酒馆</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">sequence制作及优化</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-08-10T08:57:39.000Z" title="发表于 2023-08-10 16:57:39">2023-08-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-11T06:24:37.015Z" title="更新于 2023-08-11 14:24:37">2023-08-11</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%99%9A%E5%B9%BB/">虚幻</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%99%9A%E5%B9%BB/sequence/">sequence</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>5分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="sequence制作及优化"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="一、Sequence动画制作"><a href="#一、Sequence动画制作" class="headerlink" title="*一、Sequence动画制作*"></a><em><strong>*一、Sequence动画制作*</strong></em></h1><h3 id="1-新建sequence文件"><a href="#1-新建sequence文件" class="headerlink" title="*1 新建sequence文件*"></a><em><strong>*1 新建sequence文件*</strong></em></h3><p>· 方式如下图：中文名为关卡序列</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps120.jpg" alt="wps120"></p>
+<p>· 也可以复制之前的sequence（推荐使用该方法），它能让你配置得更快。 </p>
+<p>o 参考如下路径（里面包含最早一批制作的sequence）：depot_pj\trunk\client\Content\Product\ResourcesStatic\ArtResources\Animations\Shengsuo</p>
+<h3 id="2-新建镜头轨道"><a href="#2-新建镜头轨道" class="headerlink" title="*2 新建镜头轨道*"></a><em><strong>*2 新建镜头轨道*</strong></em></h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps121.jpg" alt="wps121"></p>
+<h3 id="3-新建actor到sequencer的轨道"><a href="#3-新建actor到sequencer的轨道" class="headerlink" title="*3 新建actor到sequencer的轨道*"></a><em><strong>*3 新建actor到sequencer的轨道*</strong></em></h3><p>· 你需要将前面提到的攀爬机关的资源加入sequence轨道：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps122.jpg" alt="img"></p>
+<p>· 添加后，此时你的sequence界面会有这些轨道：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps123.jpg" alt="img"></p>
+<h3 id="4-添加动画"><a href="#4-添加动画" class="headerlink" title="*4 添加动画*"></a><em><strong>*4 添加动画*</strong></em></h3><p>· 我们需要将人物和绳子动画挂在sequence的轨道上</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps124.jpg" alt="img"></p>
+<p>· 绳子的动画资源说明：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps125.jpg" alt="img"></p>
+<p>· 男主的动画资源说明（以下只提会用到的）： </p>
+<p>o NanZhu_Shengsuo：男主踢绳子的动作</p>
+<p>o NanZhu_Shengsuo01：男主从绳子上滑下来的动作</p>
+<p>o NanZhu_Shengsuo02：男主爬绳子上去的动作</p>
+<p>o NanZhu_Idle：男主的待机动作</p>
+<h3 id="5-调整全局帧数"><a href="#5-调整全局帧数" class="headerlink" title="*5 调整全局帧数*"></a><em><strong>*5 调整全局帧数*</strong></em></h3><p>· K帧之前先设定一下sequence的总帧数，具体到攀爬交互，尽量让它和之前制作的sequence保持一致。</p>
+<p>· 拖动这两侧的绿线和红线，改变播放的起始和结束帧。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps126.jpg" alt="img"></p>
+<h3 id="6-部署关键帧"><a href="#6-部署关键帧" class="headerlink" title="*6 部署关键帧*"></a><em><strong>*6 部署关键帧*</strong></em></h3><p>完成前面的工作之后，我们就可以开始K帧了</p>
+<p>· 先K actor的关键帧</p>
+<p>① 我们先将指示器调到第0帧。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps127.jpg" alt="img"></p>
+<p>② 然后在场景中调整actor的位置（第0帧时actor正确的位置）；</p>
+<p>③ 然后点击transform轨道的那个小圈，会将它的子轨道都部署上关键帧，此时sequence就记住了第0帧该actor的位置。</p>
+<p>④ 将actor的第0帧关键帧部署好后可以播放一下动画，观察效果表现</p>
+<p>⑤ 重复1~3步，在其他必要位置也部署上关键帧，保证动画的流程运行；</p>
+<p>· 然后再K相机的关键帧</p>
+<p>① 见下图，启用相机视角后驾驶该相机移动到初始帧合适的视角；</p>
+<p>② 同样点击transform旁边的那个小圆圈，sequence就会记住这个画面；</p>
+<p>③ 重复上述操作，在整条动画轴上需要的位置打上关键帧，保证全程镜头画面正常（tips：二分法原则，先打首尾，中间慢慢填慢慢修）</p>
+<p>④ 关键帧部署完成后，播放一下这个sequence，觉得没问题的话，这个sequence就算完成。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps128.jpg" alt="img"></p>
+<h3 id="7-补充：关于镜头融合相关的配置"><a href="#7-补充：关于镜头融合相关的配置" class="headerlink" title="*7 补充：关于镜头融合相关的配置*"></a><em><strong>*7 补充：关于镜头融合相关的配置*</strong></em></h3><p>镜头融合指从游戏相机切换到sequence相机时，镜头是融合的而非瞬切的，为了完成这个效果，需要补充部分配置。</p>
+<p>包含两部分的配置：①sequence结束后，中控角色的transform；②游戏相机的方向。</p>
+<p>· 配置流程： </p>
+<p>o 点开攀爬机关的蓝图实例，在detile面板的找到配置位置如下图所示</p>
+<p>o 可以看到有三组数据，分别是对应①踢绳子②攀爬行为③滑下行为</p>
+<p>o 每一组内数据包含两种，一个是游戏相机的旋转，另一个是主控角色的transform。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps129.jpg" alt="img"></p>
+<h1 id="二、sequence视觉优化技巧"><a href="#二、sequence视觉优化技巧" class="headerlink" title="*二、sequence视觉优化技巧*"></a><em><strong>*二、sequence视觉优化技巧*</strong></em></h1><p>在上述操作中，我们完成了一个最简单且可用的sequence，但是基于使用环境的不同，它的表现很可能不尽人意；此时我们可以使用一些手法优化它的呈现。</p>
+<h2 id="1-相机的视觉中心不对、老是抖怎么办"><a href="#1-相机的视觉中心不对、老是抖怎么办" class="headerlink" title="*1.相机的视觉中心不对、老是抖怎么办*"></a><em><strong>*1.相机的视觉中心不对、老是抖怎么办*</strong></em></h2><p>· 我们可以使相机的视觉中心始终追踪一个动态的点，来稳定相机的画面，如下图操作所示。这样相机就会持续且稳定的追踪这个黄色小方块，在相机追踪的效果下，可以辅助我们部署关键帧。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps130.jpg" alt="img"></p>
+<p>· 这个方法在当前的攀爬机关中不能使用，因为动画虽然造成了角色模型的位移，但是actor本身没有移动，此时需要使用一个取巧的方法：</p>
+<p>① 我们向场景中拖入一个空的actor</p>
+<p>② 在sequence中引用这个actor（生成它的轨道）</p>
+<p>③ 选中该actor，添加“附加”轨道，如下图所示，点击选中要追踪的男主；</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps131.jpg" alt="img"></p>
+<p>④ 然后会弹出下图所示的复选框，里面全部是nanzhu的骨骼，我们可以选定一个合适的骨骼，例如男主的neck（头部）</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps132.jpg" alt="img"></p>
+<p>⑤ 接着，同样使用相机追踪，且追踪目标为这个空actor。</p>
+<p>⑥ 注意，你需要将这个空actor保留在场景中，否则下次启动关卡时，sequence会因为找不到这个“空actor”而出现相机追踪错乱。</p>
+<h2 id="2-切镜的手法"><a href="#2-切镜的手法" class="headerlink" title="*2.切镜的手法*"></a><em><strong>*2.切镜的手法*</strong></em></h2><p>· 切镜的手法可以用于解决很多问题，比如： </p>
+<p>o 你觉得全程一个视角太无聊了，你想中途切换一下有个“不一样”的体验。</p>
+<p>o 角色动作过快，看起来不协调（比如攀爬中下滑起始的那部分动作），可以切镜略过。</p>
+<p>o 攀爬的高度远远超出预期，不可能让玩家看着爬太久，中间切镜瞬移一段距离。</p>
+<p>· 那么如何在sequence中切镜： </p>
+<p>o 先新建一个相机；</p>
+<p>o 在相机切换轨道中导入这个相机的画面；</p>
+<p>o 在相机切换轨道中调整各个相机的播放时间；</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps133.jpg" alt="img"></p>
+<h2 id="3-时间膨胀轨道怎么用"><a href="#3-时间膨胀轨道怎么用" class="headerlink" title="*3.时间膨胀轨道怎么用*"></a><em><strong>*3.时间膨胀轨道怎么用*</strong></em></h2><p>· 时间膨胀轨道可以在sequence演出过程中动态调整播放的速度，一般我们会在镜头转动过快、或者角色动作过快的的时候放慢这里的速度。</p>
+<p>· 使用流程： </p>
+<p>o 在“+轨道”中选中时间膨胀轨道；</p>
+<p>o 将进度调到你希望改变播放速度的帧，改变膨胀数值（默认值是1），例如改到0.6，打上关键帧；</p>
+<p>o 接着播放一下你就会发现sequence的播放速度中途改变了，并且这个改变的方式是线性的，这显然不符合预期。</p>
+<p>o 我们可以通过改变关键帧插值的方式调整它的变化曲线，需要查看后面第4点。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps134.jpg" alt="img"></p>
+<h2 id="4-改变关键帧插值"><a href="#4-改变关键帧插值" class="headerlink" title="*4.改变关键帧插值*"></a><em><strong>*4.改变关键帧插值*</strong></em></h2><p>· 关键帧插值可以理解为关键帧的各种类型，不同类型对应不同的过渡方式。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps135.jpg" alt="img"></p>
+<p>· 通常我们使用常量来造成突变的曲线，常量的含义是：从它开始到下一个关键帧的前一帧都和它保持一致。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps136.jpg" alt="img"></p>
+<p>· 关键帧的曲线是可以手动精细化调整的，打开曲线编辑器即可。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps137.jpg" alt="img"></p>
+<h2 id="5-相机被墙挡住了怎么办"><a href="#5-相机被墙挡住了怎么办" class="headerlink" title="*5.相机被墙挡住了怎么办*"></a><em><strong>*5.相机被墙挡住了怎么办*</strong></em></h2><p>· 改变相机的位置和焦距 </p>
+<p>o 将相机的近切面拖动到墙体前面，这样相机就会看不见这面墙，同时actor会变大（因为距离近了）；</p>
+<p>o 改变相机的焦距，此时就会发现，相机位置没有动但是仍然可以改变actor在画面上的大小，调整到合适位置。</p>
+<p>· 隐藏墙体 </p>
+<p>o 选中挡住视野的墙体，将它加入sequence轨道；</p>
+<p>o 添加可视性轨道</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps138.jpg" alt="img"></p>
+<p>· </p>
+<p>· 在轨道上标点，红色为不可见，绿色为可见。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/wps139.jpg" alt="img"></p>
+<h2 id="6-人变糊了怎么办（光圈的数值调整）"><a href="#6-人变糊了怎么办（光圈的数值调整）" class="headerlink" title="*6.人变糊了怎么办（光圈的数值调整）*"></a><em><strong>*6.人变糊了怎么办（光圈的数值调整）*</strong></em></h2><p>· 调光圈，建议改到40，基本上就不太会糊了</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://deepseacolor.github.io">Lvjunhao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://deepseacolor.github.io/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/">http://deepseacolor.github.io/2023/08/10/sequence%E5%88%B6%E4%BD%9C%E5%8F%8A%E4%BC%98%E5%8C%96/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://deepseacolor.github.io" target="_blank">深海酒馆</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://pic.imgdb.cn/item/64dae3c81ddac507cc8d5ae0.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/08/10/%E6%88%98%E6%96%97%E9%AA%8C%E8%AF%81%E7%8E%A9%E6%B3%95/" title="战斗验证玩法"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/64dae3c61ddac507cc8d5741.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">战斗验证玩法</div></div></a></div><div class="next-post pull-right"><a href="/2023/08/10/umg%E4%BD%BF%E7%94%A8%E5%88%86%E4%BA%AB/" title="umg基础操作"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/64dae3c11ddac507cc8d4adb.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">umg基础操作</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.bing.com/th/id/OGC.bc159a29881425e3e8814868e240dafb?pid=1.7&amp;rurl=https%3a%2f%2fimg.siyuetian.net%2fsytconimg%2f2022%2f07%2f070414325483424.gif&amp;ehk=qp0v38QaAxsFF6JwQUZxPLZ%2b6aOYirVPpNz8%2bOI86cs%3d" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Lvjunhao</div><div class="author-info__description">我要成为游戏策划高手</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/DeepseaColor"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/DeepseaColor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:978424283@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎光临深海小酒馆</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81Sequence%E5%8A%A8%E7%94%BB%E5%88%B6%E4%BD%9C"><span class="toc-text">*一、Sequence动画制作*</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%96%B0%E5%BB%BAsequence%E6%96%87%E4%BB%B6"><span class="toc-text">*1 新建sequence文件*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%96%B0%E5%BB%BA%E9%95%9C%E5%A4%B4%E8%BD%A8%E9%81%93"><span class="toc-text">*2 新建镜头轨道*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%96%B0%E5%BB%BAactor%E5%88%B0sequencer%E7%9A%84%E8%BD%A8%E9%81%93"><span class="toc-text">*3 新建actor到sequencer的轨道*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%B7%BB%E5%8A%A0%E5%8A%A8%E7%94%BB"><span class="toc-text">*4 添加动画*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E8%B0%83%E6%95%B4%E5%85%A8%E5%B1%80%E5%B8%A7%E6%95%B0"><span class="toc-text">*5 调整全局帧数*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E9%83%A8%E7%BD%B2%E5%85%B3%E9%94%AE%E5%B8%A7"><span class="toc-text">*6 部署关键帧*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E8%A1%A5%E5%85%85%EF%BC%9A%E5%85%B3%E4%BA%8E%E9%95%9C%E5%A4%B4%E8%9E%8D%E5%90%88%E7%9B%B8%E5%85%B3%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="toc-text">*7 补充：关于镜头融合相关的配置*</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81sequence%E8%A7%86%E8%A7%89%E4%BC%98%E5%8C%96%E6%8A%80%E5%B7%A7"><span class="toc-text">*二、sequence视觉优化技巧*</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%9B%B8%E6%9C%BA%E7%9A%84%E8%A7%86%E8%A7%89%E4%B8%AD%E5%BF%83%E4%B8%8D%E5%AF%B9%E3%80%81%E8%80%81%E6%98%AF%E6%8A%96%E6%80%8E%E4%B9%88%E5%8A%9E"><span class="toc-text">*1.相机的视觉中心不对、老是抖怎么办*</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%88%87%E9%95%9C%E7%9A%84%E6%89%8B%E6%B3%95"><span class="toc-text">*2.切镜的手法*</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%97%B6%E9%97%B4%E8%86%A8%E8%83%80%E8%BD%A8%E9%81%93%E6%80%8E%E4%B9%88%E7%94%A8"><span class="toc-text">*3.时间膨胀轨道怎么用*</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%94%B9%E5%8F%98%E5%85%B3%E9%94%AE%E5%B8%A7%E6%8F%92%E5%80%BC"><span class="toc-text">*4.改变关键帧插值*</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E7%9B%B8%E6%9C%BA%E8%A2%AB%E5%A2%99%E6%8C%A1%E4%BD%8F%E4%BA%86%E6%80%8E%E4%B9%88%E5%8A%9E"><span class="toc-text">*5.相机被墙挡住了怎么办*</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E4%BA%BA%E5%8F%98%E7%B3%8A%E4%BA%86%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%88%E5%85%89%E5%9C%88%E7%9A%84%E6%95%B0%E5%80%BC%E8%B0%83%E6%95%B4%EF%BC%89"><span class="toc-text">*6.人变糊了怎么办（光圈的数值调整）*</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By Lvjunhao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="30" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>地图系统方案调研 | 深海酒馆</title><meta name="author" content="Lvjunhao"><meta name="copyright" content="Lvjunhao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="1.前准备· 整理对于地图系统的概念 · 如何评价一套地图系统 · 需要思考的问题 1.1地图功能的核心要素*①我在哪*我在当前场景的位置？我在世界的位置？我在垂直维度上的位置？（如果场景突出垂直结构的话） *②目标在哪*目标在哪个场景？场景在世界的哪里？垂直方向上是高还是低？ *③我怎么过去*我能够借助地图规划一条可执行的路径。 1.2地图的制作类型*①街道型*地图切的更碎，一个街道一张地图；">
+<meta property="og:type" content="article">
+<meta property="og:title" content="地图系统方案调研">
+<meta property="og:url" content="http://deepseacolor.github.io/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/index.html">
+<meta property="og:site_name" content="深海酒馆">
+<meta property="og:description" content="1.前准备· 整理对于地图系统的概念 · 如何评价一套地图系统 · 需要思考的问题 1.1地图功能的核心要素*①我在哪*我在当前场景的位置？我在世界的位置？我在垂直维度上的位置？（如果场景突出垂直结构的话） *②目标在哪*目标在哪个场景？场景在世界的哪里？垂直方向上是高还是低？ *③我怎么过去*我能够借助地图规划一条可执行的路径。 1.2地图的制作类型*①街道型*地图切的更碎，一个街道一张地图；">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic.imgdb.cn/item/64dae3c41ddac507cc8d535b.png">
+<meta property="article:published_time" content="2023-08-10T10:38:36.000Z">
+<meta property="article:modified_time" content="2023-08-11T02:58:40.877Z">
+<meta property="article:author" content="Lvjunhao">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/64dae3c41ddac507cc8d535b.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://deepseacolor.github.io/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '地图系统方案调研',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-08-11 10:58:40'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.bing.com/th/id/OGC.bc159a29881425e3e8814868e240dafb?pid=1.7&amp;rurl=https%3a%2f%2fimg.siyuetian.net%2fsytconimg%2f2022%2f07%2f070414325483424.gif&amp;ehk=qp0v38QaAxsFF6JwQUZxPLZ%2b6aOYirVPpNz8%2bOI86cs%3d" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.imgdb.cn/item/64dae3c41ddac507cc8d535b.png')"><nav id="nav"><span id="blog-info"><a href="/" title="深海酒馆"><span class="site-name">深海酒馆</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">地图系统方案调研</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-08-10T10:38:36.000Z" title="发表于 2023-08-10 18:38:36">2023-08-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-11T02:58:40.877Z" title="更新于 2023-08-11 10:58:40">2023-08-11</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%B8%B8%E6%88%8F%E7%B3%BB%E7%BB%9F/">游戏系统</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%B8%B8%E6%88%8F%E7%B3%BB%E7%BB%9F/%E8%BE%85%E5%8A%A9%E7%B3%BB%E7%BB%9F/">辅助系统</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>12分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="地图系统方案调研"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="1-前准备"><a href="#1-前准备" class="headerlink" title="1.前准备"></a><strong>1.前准备</strong></h1><p>· 整理对于地图系统的概念</p>
+<p>· 如何评价一套地图系统</p>
+<p>· 需要思考的问题</p>
+<h2 id="1-1地图功能的核心要素"><a href="#1-1地图功能的核心要素" class="headerlink" title="1.1地图功能的核心要素"></a><strong>1.1地图功能的核心要素</strong></h2><h3 id="①我在哪"><a href="#①我在哪" class="headerlink" title="*①我在哪*"></a><em><strong>*①我在哪*</strong></em></h3><p>我在当前场景的位置？我在世界的位置？<br>我在垂直维度上的位置？（如果场景突出垂直结构的话）</p>
+<h3 id="②目标在哪"><a href="#②目标在哪" class="headerlink" title="*②目标在哪*"></a><em><strong>*②目标在哪*</strong></em></h3><p>目标在哪个场景？场景在世界的哪里？<br>垂直方向上是高还是低？</p>
+<h3 id="③我怎么过去"><a href="#③我怎么过去" class="headerlink" title="*③我怎么过去*"></a><em><strong>*③我怎么过去*</strong></em></h3><p>我能够借助地图规划一条可执行的路径。</p>
+<h2 id="1-2地图的制作类型"><a href="#1-2地图的制作类型" class="headerlink" title="1.2地图的制作类型"></a><strong>1.2地图的制作类型</strong></h2><h3 id="①街道型"><a href="#①街道型" class="headerlink" title="*①街道型*"></a><em><strong>*①街道型*</strong></em></h3><p>地图切的更碎，一个街道一张地图；</p>
+<p>街道型地图在传统rpg游戏中很常见，例如ff7re、dq11、另一个伊甸等。</p>
+<h3 id="②区域型"><a href="#②区域型" class="headerlink" title="*②区域型*"></a><em><strong>*②区域型*</strong></em></h3><p>一个区域一张地图，类似于巫师3那种，一个百果园会是一个相当大且有相当自由度的无缝大场景。</p>
+<p>许多游戏会是区域性+街道型场景混合的方式，例如ff7re，既有较大自由度的居民区场景，也有更多各种结构简单的街道场景。</p>
+<h3 id="③开放世界型"><a href="#③开放世界型" class="headerlink" title="*③开放世界型*"></a><em><strong>*③开放世界型*</strong></em></h3><p>整个世界是一个连贯的、整体的地图；</p>
+<p>—-开放世界+凸显垂直场景结构：有时会采用3d透视地图，例如尼尔和赛博朋克2077。</p>
+<h2 id="1-3怎么评价一套地图系统"><a href="#1-3怎么评价一套地图系统" class="headerlink" title="1.3怎么评价一套地图系统"></a><strong>1.3怎么评价一套地图系统</strong></h2><p>首先要保证最基本的功能：能够确认地图的核心要素—-我在哪、目标在哪、我怎么去。</p>
+<p>其次，再确认这些核心要素的流程体验：</p>
+<p>①是否简单直观：最好能一眼能就对核心要素有概念</p>
+<p>②是否方便易用：以最少的操作分析获得一个具体的可执行的行动方案</p>
+<h2 id="1-4带着问题调研"><a href="#1-4带着问题调研" class="headerlink" title="1.4带着问题调研"></a><strong>1.4带着问题调研</strong></h2><p>如何体现场景之间的联系—-位置关系？连接道路？</p>
+<p>是否需要（以及如何体现）地势的高低</p>
+<p>如何显示纵向多层场景结构</p>
+<h1 id="2-调研"><a href="#2-调研" class="headerlink" title="2.调研"></a><strong>2.调研</strong></h1><h2 id="2-1传统rpg"><a href="#2-1传统rpg" class="headerlink" title="2.1传统rpg"></a><strong>2.1传统rpg</strong></h2><p>传统jrpg地图系统一般会将地图分层展现</p>
+<p>· 街道地图&#x2F;区域地图：</p>
+<p>展现更加细节的场景要素，玩家能够获得自己以及目标的精准位置</p>
+<p>会注重街道&#x2F;区域之间的连接，比如显示出&#x2F;入口的目标区域是什么</p>
+<p>街道地图&#x2F;区域地图会是玩家主要使用的地图</p>
+<p>· 世界地图</p>
+<p>用于将街道地图&#x2F;区域地图串联起来，给到玩家一个世界的整体概念，能够大概理解不同区域之间的位置关系</p>
+<p>玩家对于“我怎么去”，有一个初步概念</p>
+<h3 id="2-1-1ff7re"><a href="#2-1-1ff7re" class="headerlink" title="2.1.1ff7re"></a><strong>2.1.1ff7re</strong></h3><p>· </p>
+<h4 id="地图系统预览"><a href="#地图系统预览" class="headerlink" title="*地图系统预览*"></a><em><strong>*地图系统预览*</strong></em></h4><p>· </p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps68.jpg" alt="img"></p>
+<p>· </p>
+<h4 id="特点"><a href="#特点" class="headerlink" title="*特点*"></a><em><strong>*特点*</strong></em></h4><p>· 没有无缝大世界，采用一个场景一个地图的方式，场景有可能是一个大型区域或者仅仅是一个街道，甚至一个楼层，它将这些场景的地图并列的在列表里面列出来。</p>
+<p>​     依据剧情概念，例如第五区、第七区将这些地图分组。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps69.jpg" alt="img"></p>
+<p>· 地图层级&#x2F;类型</p>
+<p>​     ①世界地图–3d透视地图，展现整个米加德区域，只能抽象的展现这个世界的样貌，无法通过交互查看对应区域的地图。</p>
+<p>​     ②街道&#x2F;区域地图–2d平面地图</p>
+<p>​       地图列表—-一个场景一个地图</p>
+<p>​       地图打组—-一组地图属于某一个大型区域（例如第七区贫民窟，这是一个剧情概念）</p>
+<p>· </p>
+<h4 id="评价"><a href="#评价" class="headerlink" title="*评价*"></a><em><strong>*评价*</strong></em></h4><p>· 不止一次在论坛上看到 “这地图是真的看不懂”，使用体验非常的差。</p>
+<p>​      问题的主要原因主要在于玩家在基本要素的获取上都非常困难：</p>
+<p>​     ①get不到场景之间的位置关系，没有陆行鸟车站时根本不知道怎么过去，顺着路跑，走着走着一开地图发现越走越偏。</p>
+<p>​     ②目标点经常在地图上的黑区，无法第一时间制定行动方案，研究行动路线都要看很久，非常劝退。</p>
+<p><em>举个例子：第五区有A、B、C、D、E五张图，我在A居民区，目标在E政府大楼-1层；我能够知道A和E什么样，但是我不知道怎么过去–因为我不知道地图的出口通向哪，不知道中间要跨越哪些地图。另外，不可能在大型建筑的每一层都放置一个传送点。</em></p>
+<p>​     ③世界地图完全不能把场景串联起来。</p>
+<p>​     如果计划路线都需要消耗相当的精力和时间，甚至需要去尝试和探索，那这是纯纯的负反馈</p>
+<h3 id="2-1-2dq11s"><a href="#2-1-2dq11s" class="headerlink" title="*2.1.2dq11s*"></a><em><strong>*2.1.2dq11s*</strong></em></h3><p>· </p>
+<p>世界地图：</p>
+<p>· </p>
+<p>​     <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps70.jpg" alt="img"><br>​      粗略的世界地图，无法看到场景细节，可以在大地图直接传送到目标地图传送点</p>
+<p>· </p>
+<p>区域地图：</p>
+<p>· </p>
+<p>​     <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps71.jpg" alt="img"><br>​     每个无缝场景有专属区域地图，地图出口有目标区域名称</p>
+<p>​     通过查看“附近的地图”这种方式来关联不同区域地图</p>
+<p>​     并不是每个区域地图都在世界地图上有映射点</p>
+<p>· 评价<br>传统jrpg地图做法，比较好用，但是仍然很难直观的感知到各个场景之间的位置关系</p>
+<p>​     相比ff7re功能更加完整：</p>
+<p>​      ①知道地图出口去往哪，能够思路清晰的规划路线</p>
+<p>​      ②不会虚空标点，造成错误引导。</p>
+<p>​      ③世界地图其实尽量好的把不同区域串联了起来，玩家能从中get到区域的位置关系。</p>
+<p>​     虽然还是有点不方便，但熟悉这套系统是能够方便使用的。</p>
+<h3 id="2-1-3巫师3"><a href="#2-1-3巫师3" class="headerlink" title="2.1.3巫师3"></a><strong>2.1.3巫师3</strong></h3><p>· 世界地图</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps72.jpg" alt="img"></p>
+<p>· 区域地图</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps73.jpg" alt="img"></p>
+<p>巫师3的特点在于它有很大的无缝的区域地图，体验上更像是多个小型的开放世界拼起来的游戏世界。</p>
+<p>具体到我们项目，我们可能会既有这种大型场景的区域地图，也有那种更细的街道型地图。</p>
+<h3 id="2-1-4另一个伊甸"><a href="#2-1-4另一个伊甸" class="headerlink" title="2.1.4另一个伊甸"></a><strong>2.1.4另一个伊甸</strong></h3><p>· </p>
+<p>世界地图</p>
+<p>· </p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps74.jpg" alt="img"></p>
+<p>· </p>
+<p>街道地图</p>
+<p>· </p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps75.jpg" alt="img"></p>
+<p>玩家实际使用的场景地图是街道结构地图–&gt;拼成一个区域（剧情定义的区域概念）–&gt;这些场景区域抽象化的在世界地图上呈现。</p>
+<h2 id="2-2开放世界"><a href="#2-2开放世界" class="headerlink" title="2.2开放世界"></a><strong>2.2开放世界</strong></h2><h3 id="2-2-1原神"><a href="#2-2-1原神" class="headerlink" title="2.2.1原神"></a><strong>2.2.1原神</strong></h3><p>· </p>
+<h4 id="大地图"><a href="#大地图" class="headerlink" title="*大地图*"></a><em><strong>*大地图*</strong></em></h4><p>· </p>
+<p>存在多级界面展示，通过滚轮放大缩小切换</p>
+<p>①国家级别</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps76.jpg" alt="img"></p>
+<p>显示内容：场景片区名（具有统一风格的场景）、神像、副本<br>②区级</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps77.jpg" alt="img"><br>显示内容：场景片区的子区域名、传送点、玩家标记、活动点、<br>*同时会移除场景片区名<br>③城级</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps78.jpg" alt="img"><br>显示内容：市区npc功能点（铁匠铺、西风教堂、冒险家协会、··· ···）</p>
+<p>· </p>
+<h4 id="独立场景片区，只有两个显示级别（例如金苹果群岛、层岩巨源）"><a href="#独立场景片区，只有两个显示级别（例如金苹果群岛、层岩巨源）" class="headerlink" title="*独立场景片区，只有两个显示级别（例如金苹果群岛、层岩巨源）*"></a><em><strong>*独立场景片区，只有两个显示级别（例如金苹果群岛、层岩巨源）*</strong></em></h4><p>· </p>
+<p>①国级</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps79.jpg" alt="img"><br>显示内容：片区名（双双岛）、传送点、活动点、<br>②区级<br>移除片区名（双双岛）</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps80.jpg" alt="img"><br>显示片区的子区域名（巨蛇岩洞&lt;层岩巨渊，层岩巨渊和双双岛同级）</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps81.jpg" alt="img"></p>
+<p>· </p>
+<h4 id="地图列表"><a href="#地图列表" class="headerlink" title="*地图列表*"></a><em><strong>*地图列表*</strong></em></h4><p>· </p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps82.jpg" alt="img"></p>
+<p>多个无缝场景之间通过场景列表切换</p>
+<p>· </p>
+<h4 id="仅查看秘境功能"><a href="#仅查看秘境功能" class="headerlink" title="*仅查看秘境功能*"></a><em><strong>*仅查看秘境功能*</strong></em></h4><p>· </p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps83.jpg" alt="img"></p>
+<p>· </p>
+<h4 id="查看目标点信息"><a href="#查看目标点信息" class="headerlink" title="*查看目标点信息*"></a><em><strong>*查看目标点信息*</strong></em></h4><p>· </p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps84.jpg" alt="img"></p>
+<p>· </p>
+<h4 id="平面地图的地势高低"><a href="#平面地图的地势高低" class="headerlink" title="*平面地图的地势高低*"></a><em><strong>*平面地图的地势高低*</strong></em></h4><p>· </p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps85.jpg" alt="img"></p>
+<p>通过特殊的绘画技法在平面地图上表现了地势的高低，仔细看其实能在这个平面图上看出地势的高低</p>
+<p>· </p>
+<h4 id="小地图"><a href="#小地图" class="headerlink" title="*小地图*"></a><em><strong>*小地图*</strong></em></h4><p>· </p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps86.jpg" alt="img"></p>
+<p>使用和大地图相同的资源<br>地图固定朝向，玩家标记的朝向和场景实际朝向一致不断变化</p>
+<p>· </p>
+<h4 id="传送点"><a href="#传送点" class="headerlink" title="*传送点*"></a><em><strong>*传送点*</strong></em></h4><p>· </p>
+<p>七天神像：可以传送；站旁边可以回血；可以点亮一片地图<br>普通传送点：可以传送<br>副本点：可以直接传送到副本门口<br>活动点：可以直接传送到活动入口（后期添加功能，估计能有效提升玩家的活动参与率）</p>
+<p>· </p>
+<h4 id="评价-1"><a href="#评价-1" class="headerlink" title="*评价*"></a><em><strong>*评价*</strong></em></h4><p>· </p>
+<p>侧重垂直结构的场景，地图使用体验比较差。以层岩巨渊为例，经常找不到路的入口。</p>
+<h3 id="2-2-2幻塔"><a href="#2-2-2幻塔" class="headerlink" title="2.2.2幻塔"></a><strong>2.2.2幻塔</strong></h3><p>类似原神的做法，但是地图绘制相对粗糙，地势的高低效果表达得更差。（但是仍然可以看到，它通过等高线以及涂色的深浅来反映地势的高低）</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps87.jpg" alt="img"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps88.jpg" alt="img"></p>
+<h3 id="2-2-3塞尔达"><a href="#2-2-3塞尔达" class="headerlink" title="2.2.3塞尔达"></a><strong>2.2.3塞尔达</strong></h3><p>世界级</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps89.png" alt="img"><br>区域级</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps90.png" alt="img"><br>细分场景级（城市、平原、丘陵等各种风格化场景全貌）</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps91.png" alt="img"><br>街道级</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps92.png" alt="img"></p>
+<h2 id="2-3（凸显垂直结构的）3d透视地图"><a href="#2-3（凸显垂直结构的）3d透视地图" class="headerlink" title="2.3（凸显垂直结构的）3d透视地图"></a><strong>2.3（凸显垂直结构的）3d透视地图</strong></h2><h3 id="2-3-1尼尔"><a href="#2-3-1尼尔" class="headerlink" title="2.3.1尼尔"></a><strong>2.3.1尼尔</strong></h3><p>3d透视抽象方块</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps93.jpg" alt="img"></p>
+<h3 id="2-3-2赛博朋克2077"><a href="#2-3-2赛博朋克2077" class="headerlink" title="2.3.2赛博朋克2077"></a><strong>2.3.2赛博朋克2077</strong></h3><p>世界地图：可以放大缩小但是没有其他层级的显示</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps94.jpg" alt="img"><br>小地图—-采用的当前层更细节化抽象化的场景地图</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps95.jpg" alt="img"></p>
+<h1 id="3-假设做个类开放世界地图"><a href="#3-假设做个类开放世界地图" class="headerlink" title="3.假设做个类开放世界地图"></a><strong>3.假设做个类开放世界地图</strong></h1><h2 id="3-1-一整块连贯的大地图"><a href="#3-1-一整块连贯的大地图" class="headerlink" title="*3.1.一整块连贯的大地图*"></a><em><strong>*3.1.一整块连贯的大地图*</strong></em></h2><p>①操作上可以通过放大缩放的操作感受世界整体概念、或者一些场景细节。</p>
+<p>②这样的地图思路使用起来思路是连贯的</p>
+<p>比如提起A、B区域，脑子里能有画面，这些区域大概在空间得哪个位置，而不是A在B左边、C在B下边这样抽象印象</p>
+<h2 id="3-2-地图可能会变成东一块西一块的样式"><a href="#3-2-地图可能会变成东一块西一块的样式" class="headerlink" title="*3.2.地图可能会变成东一块西一块的样式*"></a><em><strong>*3.2.地图可能会变成东一块西一块的样式*</strong></em></h2><p>①为什么许多rpg不这么做：</p>
+<p>开放世界是本身是一个紧密连续的世界，而一般rpg营造的世界概念非常大，并且只选取其中的部分区域制作游戏场景</p>
+<p>rpg地图的有效区域以连贯的方式绘制出来容易是东一块西一块的样式</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps96.jpg" alt="img"></p>
+<p>以这个概念图为例，实际上的有效区域只有A和α、β，它们相隔甚远</p>
+<p>②这个问题可以怎么搞</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/wps97.jpg" alt="img"></p>
+<p>我们可以将有效区域以外的地图概念也绘制出来，比如启光帝国，这个坑洞以及坑洞中的柱子要体现出来。</p>
+<p>对于可以活动的有效区域，使用特殊（美术展现方式）凸显出来，让玩家意识到这是可以行动的区域</p>
+<p>这种方式有个限制—-如果我们营造的世界概念真的非常非常大，只有极为微小的区域是活动区域，那就gg。举个极端的例子，世界概念是宇宙，但我们不可能绘制出宇宙。</p>
+<p>我们需要考虑：有效区域&#x2F;无效区域 的比例</p>
+<h2 id="3-3-垂直方向上的多层重叠场景结构"><a href="#3-3-垂直方向上的多层重叠场景结构" class="headerlink" title="*3.3.垂直方向上的多层重叠场景结构*"></a><em><strong>*3.3.垂直方向上的多层重叠场景结构*</strong></em></h2><p>①需要把多层的活动区域切成不同活动场景，且同一个场景不能有(或者要极为谨慎的处理)俯视角下重叠的区域，我们需要对每个活动场景绘制平面地图。</p>
+<p>②地图系统中如何操作</p>
+<p>我们将地图放大到对应区域，例如A柱子（我们定义A为一个有效活动区域，它因为垂直结构的特性拥有多个场景）</p>
+<p>当放大到一定程度时，会浮现场景选择ui，可以通过该ui切换该区域显示的各层场景</p>
+<p>可以理解为将多个地图切片堆叠，当查看中间层的场景时，上层的地图会隐藏消失</p>
+<h2 id="3-4-我们需要反映地势的高低吗"><a href="#3-4-我们需要反映地势的高低吗" class="headerlink" title="*3.4.我们需要反映地势的高低吗*"></a><em><strong>*3.4.我们需要反映地势的高低吗*</strong></em></h2><p>①我觉得不刚需</p>
+<p>我们没有垂直方向上的自由移动，从需求上出发我觉得玩家对地势高低的判断是不刚需的—-我们并非自由的可以从任何一个方向向上爬，而是按规定好的道路前行，我们只要把多层场景划分好就行。</p>
+<p>②不过还是得有</p>
+<p>我仍然希望我们的地图看上去像是一个俯视角的沙盘，能够感知到各种地势的高低，类似原神的地图那样（或者更明显一点？）用特殊的绘画技法实现。</p>
+<p>我希望通过地图系统能传达一个对这个世界立体概念的感知，这是一个直觉的，无需刻意注意的感知。</p>
+<p>③拒绝等高线</p>
+<p>我觉得等高线是在刚需条件下的妥协做法</p>
+<p>它带来的感知是抽象、且技术性、逻辑性的</p>
+<h2 id="3-5-小地图"><a href="#3-5-小地图" class="headerlink" title="*3.5.小地图*"></a><em><strong>*3.5.小地图*</strong></em></h2><p>结合前面思路，我们还是有各个场景的区域(街道)地图，只是我希望能把这些地图连贯的在大地图上展现</p>
+<p>小地图使用对应的街道&#x2F;区域地图，类似于dq11的做法，需要标记地图的出口；</p>
+<p>小地图是否要固定朝向（上北下南）</p>
+<p>​      是；固定角色方向（朝上）更适用于赛车游戏的做法，它会更加注意对“左右”的感知，而我们更在意自己要去哪儿。</p>
+<h1 id="4-采用传统rpg的做法"><a href="#4-采用传统rpg的做法" class="headerlink" title="*4.采用传统rpg的做法*"></a><em><strong>*4.采用传统rpg的做法*</strong></em></h1><p>· </p>
+<p>前面提到的类开放世界的做法，地图系统可能会对其他部分的设计提出过多要求</p>
+<p>· </p>
+<p>· 基于以下两个点，可能我们就是无法做出一个连贯的大地图：</p>
+<p>​     ①营造的世界概念非常大，可活动区域相对很小</p>
+<p>​       类rpg做法：只需要绘制一个粗糙的大世界地图，然后对可活动区域标点，通过标点映射到各个区域地图；</p>
+<p>​       类开放世界做法：对大量的无效区域同样需要精细的绘制（基于典型的放大缩小操作）；另外如果无效区域很大，操作起来也会不方便；</p>
+<p>​     ②由于（世界到区域）映射关系并不准确，各个活动区域的地图实际上是无法拼成世界地图的。</p>
+<p>​       假设我们有A、B、C三张地图，B是连接A、C的通道。基于各自场景对玩家体验的需求，进行了独立的设计，然后从上帝视角看，这三张图在相同比例下就是拼不起来的。</p>
+<h2 id="4-1类rpg式的地图需要考虑哪些问题："><a href="#4-1类rpg式的地图需要考虑哪些问题：" class="headerlink" title="*4.1类rpg式的地图需要考虑哪些问题：*"></a><em><strong>*4.1类rpg式的地图需要考虑哪些问题：*</strong></em></h2><p>· 玩家直接使用的各个分片的区域地图（某个建筑或区域的某一层）怎么组织起来，以及在系统里怎么呈现出来。</p>
+<h3 id="4-1-1地图如何分级呈现"><a href="#4-1-1地图如何分级呈现" class="headerlink" title="*4.1.1地图如何分级呈现*"></a><em><strong>*4.1.1地图如何分级呈现*</strong></em></h3><p>· 剧情概念的地图分级：世界、国家、省市区域、大型建筑；</p>
+<p>​     依据剧情概念，这个层级划分在逻辑上是非常清楚的，但是我们无法接受玩家在交互上需要切换四个层级的地图，所以需要考虑哪些层级是可以统一的。</p>
+<p>​     ①世界到区域：前面提到，当世界概念非常大，有效区域很小时，我们不得不将世界和区域分级呈现；（世界和区域之间可能存在其他划分概念例如“国家”，那么将他在世界地图上直接呈现，而不会存在一个国家级别的地图）</p>
+<p>​     ②区域到大型建筑：区域上存在的大型建筑，它的内部结构可能远远比外部的大，且有自己独立的一套地图（指建筑的每层地图集合），区域和大型建筑之间逻辑上是包含关系而不是并列关系。</p>
+<h3 id="4-1-2区域和大型建筑的关系"><a href="#4-1-2区域和大型建筑的关系" class="headerlink" title="*4.1.2区域和大型建筑的关系*"></a><em><strong>*4.1.2区域和大型建筑的关系*</strong></em></h3><p>世界-区域-大型建筑：三层结构仍然是不易操作的，所以考虑将大型建筑和区域并级。</p>
+<p>并级的意思是在世界地图上大型建筑和区域都有独有的映射点，可以直接从世界地图上打开一个建筑的地图，地图列表里面也会包含大型建筑的选项。</p>
+<p>dq11里面采用了类似的做法，大型建筑实际上被视为了一个区域。</p>
+<h3 id="4-1-3地图之间如何关联"><a href="#4-1-3地图之间如何关联" class="headerlink" title="*4.1.3地图之间如何关联*"></a><em><strong>*4.1.3地图之间如何关联*</strong></em></h3><p>· 在dq11里面，处于当前地图时可以查看附近的区域地图（同时区域地图里面，会标注各个出口的目标地图。），可以在任何时候查看世界地图，但是不能从世界地图直接查看各个区域的地图。</p>
+<p>· 基于dq11方案的优化：可以直接从世界地图上进入各个区域地图，也可以在区域地图上直接点击进入附近的地图。</p>
+<h3 id="4-1-4多层场景如何呈现"><a href="#4-1-4多层场景如何呈现" class="headerlink" title="*4.1.4多层场景如何呈现*"></a><em><strong>*4.1.4多层场景如何呈现*</strong></em></h3><p>大型建筑内部一般存在多层场景，需要对每层单独绘制地图，并且提供一个切换方案（参考星穹铁道的切换地图层ui）；</p>
+<p>大型区域也可能存在多层场景，可以采用统一的方式处理。</p>
+<h3 id="4-1-5地图列表呈现效果"><a href="#4-1-5地图列表呈现效果" class="headerlink" title="*4.1.5地图列表呈现效果*"></a><em><strong>*4.1.5地图列表呈现效果*</strong></em></h3><p>基于前面的思路，地图列表会列举所有的区域地图。</p>
+<p>这么做存在的问题是：</p>
+<p>①大型建筑往往从属于某个区域（剧情概念），但是在列表里和区域并级，不符合剧情直觉；（参考原神的地图列表，（从属某个国家）地区、国家、尘歌壶是并列的）</p>
+<p>②如果我们尽量做小而多的场景的话，地图列表显然会是长长的一列，这也是不可接受的，我们或许需要对这些地图进行分组处理（类似ff7re做法）。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://deepseacolor.github.io">Lvjunhao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://deepseacolor.github.io/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/">http://deepseacolor.github.io/2023/08/10/%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%B0%83%E7%A0%94/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://deepseacolor.github.io" target="_blank">深海酒馆</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://pic.imgdb.cn/item/64dae3c41ddac507cc8d535b.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/08/10/%E5%9F%BA%E7%A1%803c/" title="基础3c"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/64dae3c31ddac507cc8d4f4b.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">基础3c</div></div></a></div><div class="next-post pull-right"><a href="/2023/08/10/%E9%9D%9E%E6%88%98%E6%96%97%E8%A7%92%E8%89%B2%E5%8A%A8%E4%BD%9C%E7%B1%BB%E5%9E%8B/" title="非战斗角色动作类型"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/64dae3bd1ddac507cc8d4120.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">非战斗角色动作类型</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.bing.com/th/id/OGC.bc159a29881425e3e8814868e240dafb?pid=1.7&amp;rurl=https%3a%2f%2fimg.siyuetian.net%2fsytconimg%2f2022%2f07%2f070414325483424.gif&amp;ehk=qp0v38QaAxsFF6JwQUZxPLZ%2b6aOYirVPpNz8%2bOI86cs%3d" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Lvjunhao</div><div class="author-info__description">我要成为游戏策划高手</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/DeepseaColor"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/DeepseaColor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:978424283@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎光临深海小酒馆</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E5%89%8D%E5%87%86%E5%A4%87"><span class="toc-text">1.前准备</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1%E5%9C%B0%E5%9B%BE%E5%8A%9F%E8%83%BD%E7%9A%84%E6%A0%B8%E5%BF%83%E8%A6%81%E7%B4%A0"><span class="toc-text">1.1地图功能的核心要素</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A0%E6%88%91%E5%9C%A8%E5%93%AA"><span class="toc-text">*①我在哪*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A1%E7%9B%AE%E6%A0%87%E5%9C%A8%E5%93%AA"><span class="toc-text">*②目标在哪*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A2%E6%88%91%E6%80%8E%E4%B9%88%E8%BF%87%E5%8E%BB"><span class="toc-text">*③我怎么过去*</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2%E5%9C%B0%E5%9B%BE%E7%9A%84%E5%88%B6%E4%BD%9C%E7%B1%BB%E5%9E%8B"><span class="toc-text">1.2地图的制作类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A0%E8%A1%97%E9%81%93%E5%9E%8B"><span class="toc-text">*①街道型*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A1%E5%8C%BA%E5%9F%9F%E5%9E%8B"><span class="toc-text">*②区域型*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A2%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C%E5%9E%8B"><span class="toc-text">*③开放世界型*</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3%E6%80%8E%E4%B9%88%E8%AF%84%E4%BB%B7%E4%B8%80%E5%A5%97%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F"><span class="toc-text">1.3怎么评价一套地图系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-4%E5%B8%A6%E7%9D%80%E9%97%AE%E9%A2%98%E8%B0%83%E7%A0%94"><span class="toc-text">1.4带着问题调研</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E8%B0%83%E7%A0%94"><span class="toc-text">2.调研</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1%E4%BC%A0%E7%BB%9Frpg"><span class="toc-text">2.1传统rpg</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-1ff7re"><span class="toc-text">2.1.1ff7re</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E9%A2%84%E8%A7%88"><span class="toc-text">*地图系统预览*</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%B9%E7%82%B9"><span class="toc-text">*特点*</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7"><span class="toc-text">*评价*</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-2dq11s"><span class="toc-text">*2.1.2dq11s*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-3%E5%B7%AB%E5%B8%883"><span class="toc-text">2.1.3巫师3</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-4%E5%8F%A6%E4%B8%80%E4%B8%AA%E4%BC%8A%E7%94%B8"><span class="toc-text">2.1.4另一个伊甸</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C"><span class="toc-text">2.2开放世界</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-1%E5%8E%9F%E7%A5%9E"><span class="toc-text">2.2.1原神</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%A7%E5%9C%B0%E5%9B%BE"><span class="toc-text">*大地图*</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8B%AC%E7%AB%8B%E5%9C%BA%E6%99%AF%E7%89%87%E5%8C%BA%EF%BC%8C%E5%8F%AA%E6%9C%89%E4%B8%A4%E4%B8%AA%E6%98%BE%E7%A4%BA%E7%BA%A7%E5%88%AB%EF%BC%88%E4%BE%8B%E5%A6%82%E9%87%91%E8%8B%B9%E6%9E%9C%E7%BE%A4%E5%B2%9B%E3%80%81%E5%B1%82%E5%B2%A9%E5%B7%A8%E6%BA%90%EF%BC%89"><span class="toc-text">*独立场景片区，只有两个显示级别（例如金苹果群岛、层岩巨源）*</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%B0%E5%9B%BE%E5%88%97%E8%A1%A8"><span class="toc-text">*地图列表*</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%85%E6%9F%A5%E7%9C%8B%E7%A7%98%E5%A2%83%E5%8A%9F%E8%83%BD"><span class="toc-text">*仅查看秘境功能*</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E7%9B%AE%E6%A0%87%E7%82%B9%E4%BF%A1%E6%81%AF"><span class="toc-text">*查看目标点信息*</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B9%B3%E9%9D%A2%E5%9C%B0%E5%9B%BE%E7%9A%84%E5%9C%B0%E5%8A%BF%E9%AB%98%E4%BD%8E"><span class="toc-text">*平面地图的地势高低*</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B0%8F%E5%9C%B0%E5%9B%BE"><span class="toc-text">*小地图*</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%A0%E9%80%81%E7%82%B9"><span class="toc-text">*传送点*</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7-1"><span class="toc-text">*评价*</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-2%E5%B9%BB%E5%A1%94"><span class="toc-text">2.2.2幻塔</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-3%E5%A1%9E%E5%B0%94%E8%BE%BE"><span class="toc-text">2.2.3塞尔达</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3%EF%BC%88%E5%87%B8%E6%98%BE%E5%9E%82%E7%9B%B4%E7%BB%93%E6%9E%84%E7%9A%84%EF%BC%893d%E9%80%8F%E8%A7%86%E5%9C%B0%E5%9B%BE"><span class="toc-text">2.3（凸显垂直结构的）3d透视地图</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-1%E5%B0%BC%E5%B0%94"><span class="toc-text">2.3.1尼尔</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-2%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B2077"><span class="toc-text">2.3.2赛博朋克2077</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E5%81%87%E8%AE%BE%E5%81%9A%E4%B8%AA%E7%B1%BB%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C%E5%9C%B0%E5%9B%BE"><span class="toc-text">3.假设做个类开放世界地图</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-%E4%B8%80%E6%95%B4%E5%9D%97%E8%BF%9E%E8%B4%AF%E7%9A%84%E5%A4%A7%E5%9C%B0%E5%9B%BE"><span class="toc-text">*3.1.一整块连贯的大地图*</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-%E5%9C%B0%E5%9B%BE%E5%8F%AF%E8%83%BD%E4%BC%9A%E5%8F%98%E6%88%90%E4%B8%9C%E4%B8%80%E5%9D%97%E8%A5%BF%E4%B8%80%E5%9D%97%E7%9A%84%E6%A0%B7%E5%BC%8F"><span class="toc-text">*3.2.地图可能会变成东一块西一块的样式*</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-%E5%9E%82%E7%9B%B4%E6%96%B9%E5%90%91%E4%B8%8A%E7%9A%84%E5%A4%9A%E5%B1%82%E9%87%8D%E5%8F%A0%E5%9C%BA%E6%99%AF%E7%BB%93%E6%9E%84"><span class="toc-text">*3.3.垂直方向上的多层重叠场景结构*</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4-%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E5%8F%8D%E6%98%A0%E5%9C%B0%E5%8A%BF%E7%9A%84%E9%AB%98%E4%BD%8E%E5%90%97"><span class="toc-text">*3.4.我们需要反映地势的高低吗*</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5-%E5%B0%8F%E5%9C%B0%E5%9B%BE"><span class="toc-text">*3.5.小地图*</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-%E9%87%87%E7%94%A8%E4%BC%A0%E7%BB%9Frpg%E7%9A%84%E5%81%9A%E6%B3%95"><span class="toc-text">*4.采用传统rpg的做法*</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1%E7%B1%BBrpg%E5%BC%8F%E7%9A%84%E5%9C%B0%E5%9B%BE%E9%9C%80%E8%A6%81%E8%80%83%E8%99%91%E5%93%AA%E4%BA%9B%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="toc-text">*4.1类rpg式的地图需要考虑哪些问题：*</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-1%E5%9C%B0%E5%9B%BE%E5%A6%82%E4%BD%95%E5%88%86%E7%BA%A7%E5%91%88%E7%8E%B0"><span class="toc-text">*4.1.1地图如何分级呈现*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-2%E5%8C%BA%E5%9F%9F%E5%92%8C%E5%A4%A7%E5%9E%8B%E5%BB%BA%E7%AD%91%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-text">*4.1.2区域和大型建筑的关系*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-3%E5%9C%B0%E5%9B%BE%E4%B9%8B%E9%97%B4%E5%A6%82%E4%BD%95%E5%85%B3%E8%81%94"><span class="toc-text">*4.1.3地图之间如何关联*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-4%E5%A4%9A%E5%B1%82%E5%9C%BA%E6%99%AF%E5%A6%82%E4%BD%95%E5%91%88%E7%8E%B0"><span class="toc-text">*4.1.4多层场景如何呈现*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-5%E5%9C%B0%E5%9B%BE%E5%88%97%E8%A1%A8%E5%91%88%E7%8E%B0%E6%95%88%E6%9E%9C"><span class="toc-text">*4.1.5地图列表呈现效果*</span></a></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By Lvjunhao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="30" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>

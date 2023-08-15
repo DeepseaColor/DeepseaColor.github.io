@@ -1,0 +1,365 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>简易分层地图系统 | 深海酒馆</title><meta name="author" content="Lvjunhao"><meta name="copyright" content="Lvjunhao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="简易地图系统一、内容概要1. 名词约定 小地图：通过键盘“M”键打开地图系统界面，其中呈现完整箱庭平面的地图称为小地图。   雷达图：位于主界面左上角的圆形地图，会实时更新玩家位置以及玩家操控角色的朝向、玩家视野方向等。雷达图的显示内容就是截取小地图中以角色为中心的一个圆形区域。   大地图：大地图是对一个或一组箱庭的概念化表达，本质是一个以平面方式呈现的列表，与玩家在场景中的位置没有准确的映射关">
+<meta property="og:type" content="article">
+<meta property="og:title" content="简易分层地图系统">
+<meta property="og:url" content="http://deepseacolor.github.io/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/index.html">
+<meta property="og:site_name" content="深海酒馆">
+<meta property="og:description" content="简易地图系统一、内容概要1. 名词约定 小地图：通过键盘“M”键打开地图系统界面，其中呈现完整箱庭平面的地图称为小地图。   雷达图：位于主界面左上角的圆形地图，会实时更新玩家位置以及玩家操控角色的朝向、玩家视野方向等。雷达图的显示内容就是截取小地图中以角色为中心的一个圆形区域。   大地图：大地图是对一个或一组箱庭的概念化表达，本质是一个以平面方式呈现的列表，与玩家在场景中的位置没有准确的映射关">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic.imgdb.cn/item/64dae3c61ddac507cc8d5741.png">
+<meta property="article:published_time" content="2023-08-10T07:54:05.000Z">
+<meta property="article:modified_time" content="2023-08-10T08:31:04.529Z">
+<meta property="article:author" content="Lvjunhao">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/64dae3c61ddac507cc8d5741.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://deepseacolor.github.io/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '简易分层地图系统',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-08-10 16:31:04'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.bing.com/th/id/OGC.bc159a29881425e3e8814868e240dafb?pid=1.7&amp;rurl=https%3a%2f%2fimg.siyuetian.net%2fsytconimg%2f2022%2f07%2f070414325483424.gif&amp;ehk=qp0v38QaAxsFF6JwQUZxPLZ%2b6aOYirVPpNz8%2bOI86cs%3d" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.imgdb.cn/item/64dae3c61ddac507cc8d5741.png')"><nav id="nav"><span id="blog-info"><a href="/" title="深海酒馆"><span class="site-name">深海酒馆</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">简易分层地图系统</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-08-10T07:54:05.000Z" title="发表于 2023-08-10 15:54:05">2023-08-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-10T08:31:04.529Z" title="更新于 2023-08-10 16:31:04">2023-08-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%B8%B8%E6%88%8F%E7%B3%BB%E7%BB%9F/">游戏系统</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%B8%B8%E6%88%8F%E7%B3%BB%E7%BB%9F/%E8%BE%85%E5%8A%A9%E7%B3%BB%E7%BB%9F/">辅助系统</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>13分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="简易分层地图系统"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="简易地图系统"><a href="#简易地图系统" class="headerlink" title="简易地图系统"></a><strong>简易地图系统</strong></h1><h2 id="一、内容概要"><a href="#一、内容概要" class="headerlink" title="一、内容概要"></a><strong>一、内容概要</strong></h2><h3 id="1-名词约定"><a href="#1-名词约定" class="headerlink" title="1. 名词约定"></a>1. <strong>名词约定</strong></h3><p> 小地图：通过键盘“M”键打开地图系统界面，其中呈现完整箱庭平面的地图称为小地图。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps59.png" alt="img"></p>
+<p> 雷达图：位于主界面左上角的圆形地图，会实时更新玩家位置以及玩家操控角色的朝向、玩家视野方向等。雷达图的显示内容就是截取小地图中以角色为中心的一个圆形区域。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps60.png" alt="img"></p>
+<p> 大地图：大地图是对一个或一组箱庭的概念化表达，本质是一个以平面方式呈现的列表，与玩家在场景中的位置没有准确的映射关系。</p>
+<p>​     当前版本不需要考虑大地图的制作。</p>
+<p>​     小地图和大地图都是依托地图系统来呈现的。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps61.jpg" alt="img"> </p>
+<h3 id="2-地图系统初版工作目标"><a href="#2-地图系统初版工作目标" class="headerlink" title="2. 地图系统初版工作目标"></a>2. <strong>地图系统初版工作目标</strong></h3><p> 当前版本我们对地图系统的要求仅针对当前玩家当前身处箱庭的地图，无需切换查看其他箱庭地图等箱庭列表相关功能。</p>
+<p> 通过美术规范化的资源产出和策划配置能够直接完成对一个新箱庭的地图配置。</p>
+<h3 id="3-基础功能简述"><a href="#3-基础功能简述" class="headerlink" title="3. 基础功能简述"></a>3. <strong>基础功能简述</strong></h3><p> 玩家位置、角色朝向、视野方向在地图上的实时呈现。</p>
+<p> 分层地图的自然切换。</p>
+<p> 小地图的放大缩小、拖动功能。</p>
+<p> 地图图标的显示与追踪。</p>
+<h2 id="二、基础概念"><a href="#二、基础概念" class="headerlink" title="二、基础概念"></a>二、<strong>基础概念</strong></h2><h3 id="1-箱庭分层"><a href="#1-箱庭分层" class="headerlink" title="1. 箱庭分层"></a>1. <strong>箱庭分层</strong></h3><p> 箱庭空间可能存在多层结构，所以需要使用多张地图的交替显示来呈现整个箱庭的活动空间。</p>
+<p> 对箱庭“层”的划分：我们会从关卡设计开始就确定箱庭的分层方案，这个方案是灵活且定制化的，与箱庭中各个活动区域的实际高度无关。</p>
+<p>*一般来说基于两个原则我们会对箱庭空间进行分层：①垂直方向上具有重叠的活动区域且都具有游戏内容时；②关卡设计中给玩家营造了一个强烈的高度变化的感知。（例如坐电梯从1楼到10楼，玩家对自己楼层变化这件事的感知是统一的）</p>
+<p> 通过地区编辑器在场景中标记好不同层，每层会创建一个地区id，程序通过地区id的配置来识别每层地图对应的场景。</p>
+<h3 id="2-场景和地图的方向对应"><a href="#2-场景和地图的方向对应" class="headerlink" title="2. 场景和地图的方向对应"></a>2. <strong>场景和地图的方向对应</strong></h3><p> 地图方向：上北下南左西右东，现版本不可旋转。</p>
+<p> 场景方向：暂定 -x对应北向；y对应东向。（x、y对应ue坐标系）</p>
+<h3 id="3-场景和地图的准确映射关系"><a href="#3-场景和地图的准确映射关系" class="headerlink" title="3. 场景和地图的准确映射关系"></a>3. <strong>场景和地图的<strong><strong>准确</strong></strong>映射关系</strong></h3><p> 比例尺：小地图默认规格（无缩放和拖动）相对场景的比例尺会在地图的产出过程中确定，不同箱庭可能使用不同的比例尺。</p>
+<p>​     对于一个箱庭我们会产出一套统一规格的地图资源，并将地图资源的左上角和右下角作为参考锚点。</p>
+<p>u 地图资源在umg上固定位置摆放（例如相对地图可显示区域居中，后面会提到），所以程序相当于知道了锚点在umg上的准确坐标。</p>
+<p>u 策划会配置这两个锚点在场景中的对应坐标。</p>
+<p>u 程序通过这两个参考锚点来计算比例尺以及找到地图和场景准确的对应关系。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps63.png" alt="img"></p>
+<h3 id="4-地图系统资源配置"><a href="#4-地图系统资源配置" class="headerlink" title="4.地图系统资源配置"></a><strong>4.地图系统资源配置</strong></h3><p> 雷达图和地图系统中使用的小地图资源会随箱庭的变化而替换，考虑将小地图抽出来封装为umg文件，策划通过配置不断产出新的箱庭小地图umg，并标准化命名。</p>
+<p> 在cfg_leel中配置箱庭调用的小地图umg。</p>
+<p>​     后续需要支持直接在箱庭编辑器中配置箱庭调用的小地图umg。</p>
+<p>​     如下图所示：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps64.png" alt="img"></p>
+<h2 id="三、基础功能"><a href="#三、基础功能" class="headerlink" title="三、基础功能"></a><strong>三、基础功能</strong></h2><h3 id="1-玩家的位置、面向以及视野方向"><a href="#1-玩家的位置、面向以及视野方向" class="headerlink" title="1.玩家的位置、面向以及视野方向"></a><strong>1.玩家的位置、面向以及视野方向</strong></h3><h4 id="1-1角色箭头"><a href="#1-1角色箭头" class="headerlink" title="1.1角色箭头"></a>1.1角色箭头</h4><p> 地图中使用角色箭头来标识玩家的位置以及操控角色的面向。玩家主控角色所在的位置和面向，与地图上角色箭头的位置和指向保持一致。</p>
+<center><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="./角色朝向 (2)-16916549660682.gif" width = "" height = ""></center>
+
+<p> 角色箭头的ui显示层级应当大于小地图，不随小地图多层切换而切换（小地图多层切换见后文）。</p>
+<h4 id="1-2视野方向"><a href="#1-2视野方向" class="headerlink" title="1.2视野方向"></a>1.2视野方向</h4><p> 地图中使用一个透明扇形面积（以下称作扇形视野）来表示玩家的视野方向，扇形的中线与玩家在场景中实际看向的方向一致；视野的角度范围不会依据镜头的（远近、俯仰）改变。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps66.jpg" alt="img"> </p>
+<p> 扇形视野随着玩家视野改变对应的动态变化</p>
+<center><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="./扇形视野 (2).gif" width = "" height = ""></center>
+
+<p> 扇形视野的ui显示层级应当小于角色箭头大于小地图。</p>
+<h4 id="1-3角色箭头和扇形视野在雷达图、小地图中的呈现规则"><a href="#1-3角色箭头和扇形视野在雷达图、小地图中的呈现规则" class="headerlink" title="1.3角色箭头和扇形视野在雷达图、小地图中的呈现规则"></a>1.3角色箭头和扇形视野在雷达图、小地图中的呈现规则</h4><p> 雷达图中：①角色箭头始终在雷达图正中心；②随角色移动动态显示雷达图的显示区域（来表达玩家位置变化），角色面向和视野方向随玩家操作动态改变。</p>
+<center><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="./角色箭头在雷达图中间1 (2).gif" width = "" height = ""></center>
+
+<p> 地图系统界面：角色箭头显示在当前场景对应的小地图位置上；角色面向以及视野方向定格在打开地图系统的瞬间。</p>
+<h3 id="2-多层地图切换"><a href="#2-多层地图切换" class="headerlink" title="2. 多层地图切换"></a>2. <strong>多层地图切换</strong></h3><p> 箱庭中的每层都会单独绘制一张地图，且每层地图具有多种显示方式。</p>
+<p> 在雷达图和小地图中遵循相同的切换规则，具体见下文。</p>
+<h4 id="2-1地图有三种显示状态：正常显示、虚化显示、不显示"><a href="#2-1地图有三种显示状态：正常显示、虚化显示、不显示" class="headerlink" title="2.1地图有三种显示状态：正常显示、虚化显示、不显示"></a>2.1地图有三种显示状态：正常显示、虚化显示、不显示</h4><p> 虚化显示：地图会置灰、并调整为半透明。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps69.jpg" alt="img"> </p>
+<h4 id="2-2地图层级显示规则"><a href="#2-2地图层级显示规则" class="headerlink" title="2.2地图层级显示规则"></a>2.2地图层级显示规则</h4><p> 当玩家打开地图时，要求玩家当前所在的地图正常显示，且凸显在最上方（指ui显示层级）；直接相邻地图虚化显示，（虚化显示地图叠在下方，与地图对应的场景的实际空间高度无关）；间接相邻地图不显示。</p>
+<p> 虚化地图的ui显示层级依据层数配置从小到达排列。</p>
+<p>​     例如：1层的ui层级小于2层。</p>
+<p> 直接相邻：两张地图之间具有直接连通关系，玩家能从当前地图直接前往相邻地图。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps70.jpg" alt="img"> </p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps71.jpg" alt="img"> </p>
+<h4 id="2-3玩家可以通过层级切换ui切换箱庭地图的显示层"><a href="#2-3玩家可以通过层级切换ui切换箱庭地图的显示层" class="headerlink" title="2.3玩家可以通过层级切换ui切换箱庭地图的显示层"></a>2.3玩家可以通过层级切换ui切换箱庭地图的显示层</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps72.jpg" alt="img"> </p>
+<p> 每层具有选中&#x2F;未选中状态，可能会有鼠标悬浮状态，依据美术设计确定。</p>
+<p>​     选中某一层时，将该层地图切换为显示层。</p>
+<p> 同时有且仅有1层能被选中。</p>
+<p> 排序：换层ui按照层数从小到大排列。</p>
+<h4 id="2-4通过配置定义地图的层以及相邻关系"><a href="#2-4通过配置定义地图的层以及相邻关系" class="headerlink" title="2.4通过配置定义地图的层以及相邻关系"></a>2.4通过配置定义地图的层以及相邻关系</h4><p> 可以直接在umg上进行配置。</p>
+<p> 当选中某个层地图时：</p>
+<p>​     ①定义当前属于哪一层：例如1层。</p>
+<p>u 该参数既用于层数显示，也用于排序。</p>
+<p>​     ②定义相邻地图：例如1层、2层、5层···。</p>
+<p>​     ③配置当前层对应的地区id，例如1001（地区id由地区编辑器产出）。</p>
+<p>如下图参考所示：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps73.jpg" alt="img"> </p>
+<p>*有可能1层和3层直接连通，但是2层和3层不能连通。</p>
+<h3 id="3-地图图标"><a href="#3-地图图标" class="headerlink" title="3.地图图标"></a><strong>3.地图图标</strong></h3><h4 id="3-1图标分类"><a href="#3-1图标分类" class="headerlink" title="3.1图标分类"></a>3.1图标分类</h4><p> 地图图标分为三类，①功能点，包括npc功能点（铁匠、商店老板），或传送功能点（出入口）；②地图传送点；③事件图标（任务图标）。</p>
+<p> 当前版本需要实现的功能点图标：仅有地图出入口图标作为实现样例（图标大概样式<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps74.jpg" alt="img">）。</p>
+<p>​     出入口：指箱庭之间的双向连接点，如下图所示：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps75.png" alt="img"></p>
+<p> 当前版本需要实现的事件图标：主、支线任务状态图标。</p>
+<h4 id="3-2各类图标的功能特性"><a href="#3-2各类图标的功能特性" class="headerlink" title="3.2各类图标的功能特性"></a>3.2各类图标的功能特性</h4><p>三种图标具有不同的功能特性，①功能点类图标和所在层地图绑定，当地图不在当前层时隐藏；②传送点类图标不在当前层时仍然显示，且还需要在地图上标记处于多少层；③事件类图标同样不在当前层时隐藏，且随着事件的触发和结束会出现和消失。</p>
+<h4 id="3-3图标追踪"><a href="#3-3图标追踪" class="headerlink" title="3.3图标追踪"></a>3.3图标追踪</h4><p> 追踪操作：点击小地图中的图标，图标标记为选中状态，且会在系统界面显示图标交互列表，点击后确认追踪，如下图所示：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps76.png" alt="img"></p>
+<p>​     当选中图标20像素范围内还有其他图标时，同时显示20像素范围内所有图标的交互选项。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps77.png" alt="img"></p>
+<p> 追踪状态下，图标会在小地图上循环播放追踪动效。</p>
+<p>​     追踪动效参考：</p>
+<center><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="./地图2图标追踪 (2).gif" width = "" height = ""></center>
+
+<p>​     雷达图中，当玩家位于与该图标相同地图，且图标位于超出雷达图显示范围的位置时，图标将显示在雷达图边缘正确的方向上。如下图所示：</p>
+<center><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="./雷达图图标.gif" width = "" height = ""></center>
+
+<p>​     主界面上，生成目标点位置的图标追踪，并且实时更新玩家相对该目标点的距离。</p>
+<p>u 注：与任务系统中主界面任务图标追踪完全一致。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps80.jpg" alt="img"> </p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps81.jpg" alt="img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps82.jpg" alt="img"> </p>
+<p> 当玩家与目标点触发交互时自动取消追踪状态。</p>
+<p> 传送点不可追踪只能传送。</p>
+<p> 功能点只能处于相同地图时能追踪，离开地图时自动取消追踪状态。</p>
+<p> 事件图标可跨地图追踪，但是不处于相同地图时，不会在雷达图上显示。</p>
+<h4 id="3-4图标配置"><a href="#3-4图标配置" class="headerlink" title="3.4图标配置"></a>3.4图标配置</h4><p> 箱庭编辑器中配置功能点（出入口、铁匠、商店老板）后，能够在地图上对应位置自动生成图标。</p>
+<p>​     功能点：当前仅需生成出入口图标并用于测试。</p>
+<p>​     图标资源配置：功能npc会在npc实例表中配置是否属于功能npc并且配置调用的图标icon；出入口会在传送点实例表中配置对应的图标（需要显示图标的配置，不需要的不配）。</p>
+<h2 id="四、界面功能"><a href="#四、界面功能" class="headerlink" title="四、界面功能"></a><strong>四、界面功能</strong></h2><h3 id="1-地图系统界面"><a href="#1-地图系统界面" class="headerlink" title="1.地图系统界面"></a><strong>1.地图系统界面</strong></h3><h4 id="1-1地图系统界面美术资源组成"><a href="#1-1地图系统界面美术资源组成" class="headerlink" title="1.1地图系统界面美术资源组成"></a>1.1地图系统界面美术资源组成</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps83.png" alt="img"></p>
+<p>(1) 地图名</p>
+<p> 需要显示当前箱庭的名字。</p>
+<p>(2) 关闭按钮</p>
+<p>(3) 分层切换ui</p>
+<p>(4) 放大缩小ui</p>
+<p> 滑块可能会有悬浮和选中状态，视美术设计定。</p>
+<p>(5) 纯色不透明背景层</p>
+<p> 系统界面的底层背景，整体色彩是纯色且不透明的，视美术设计而定。</p>
+<p>(6) 地图可显示区域边缘模糊蒙版</p>
+<p> 地图资源在蒙版和背景层之间。</p>
+<p>(7) 小地图</p>
+<p> 小地图的组成资源分两种类型，①地图底图；②每层地图。</p>
+<p> 地图底图：对整个场景的概念化描述，始终处于小地图的最底层。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps84.png" alt="img"></p>
+<p> 每层地图：对玩家每层活动区域的描述，叠在底图上方，显示层级（和显示状态）会依据换层规则切换。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps85.png" alt="img"></p>
+<p> 对于同一个箱庭，底图和每层地图的图片资源规格完全相同。</p>
+<h4 id="1-2地图系统界面参数简介"><a href="#1-2地图系统界面参数简介" class="headerlink" title="1.2地图系统界面参数简介"></a>1.2地图系统界面参数简介</h4><p> 以下图中参数仅用于举例说明，具体由美术确认。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps86.png" alt="img"></p>
+<p> 地图可显示区域：地图系统界面会划定一个能够显示地图的范围，由美术确定规格并提供蒙版。</p>
+<p> 小地图资源规格：小地图资源使用相同规格，配置时叠放在系统界面固定位置（相对可显示区域居中）。</p>
+<p> 边缘最大距离：拖动地图时，地图能够停留的位置的有效区域距离可显示区域不能超过R像素。</p>
+<h4 id="1-2打开-关闭地图系统"><a href="#1-2打开-关闭地图系统" class="headerlink" title="1.2打开&#x2F;关闭地图系统"></a>1.2打开&#x2F;关闭地图系统</h4><p> 鼠标点击雷达图或者按键盘M键，打开地图界面。</p>
+<p> 点击地图界面右上角的×或者按键盘M键，关闭地图界面回到主界面。</p>
+<h4 id="1-3打开系统界面后屏蔽玩家的场景行为"><a href="#1-3打开系统界面后屏蔽玩家的场景行为" class="headerlink" title="1.3打开系统界面后屏蔽玩家的场景行为"></a>1.3打开系统界面后屏蔽玩家的场景行为</h4><p>通用时停状态：打开系统界面时，所有场景活动行为中止且时停。（见通用时停需求）</p>
+<h4 id="1-4小地图的放大和缩小"><a href="#1-4小地图的放大和缩小" class="headerlink" title="1.4小地图的放大和缩小"></a>1.4小地图的放大和缩小</h4><p> 通过缩放ui可以拖动滑条将小地图进行放大和缩小。</p>
+<p> 登录后首次打开地图系统默认缩放状态为0%，滑条位于滑轨正中间，缩放范围[-50%,50%]，对应地图默认大小的[50%,150%]，视ui设计决定是否要显示缩放参数。</p>
+<p> 地图放大或缩小时，地图有效区域会同步放大或缩小。</p>
+<p> 地图上的图标（包括角色箭头）不会随着地图放大和缩小。</p>
+<p> 需要客户端记录缩放参数，关闭后重新打开地图系统能够维持上一次操作结束时的缩放状态，但是地图居中，即无需记录拖动的位置。</p>
+<h4 id="1-5小地图可显示区域"><a href="#1-5小地图可显示区域" class="headerlink" title="1.5小地图可显示区域"></a>1.5小地图可显示区域</h4><p> 地图系统界面上会有一个矩形可显示区域用于限制小地图的显示范围。</p>
+<p> 当小地图边缘接触矩形边缘时，会有一个渐变模糊效果（该效果会由美术提供蒙版）。</p>
+<p> 由美术设计决定矩形区域的边长m*n（单位：像素）。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps87.png" alt="img"></p>
+<h4 id="1-6小地图的拖动"><a href="#1-6小地图的拖动" class="headerlink" title="1.6小地图的拖动"></a>1.6小地图的拖动</h4><p> 点击（长按）小地图可显示区域，可以将小地图朝各个方向拖动（包括斜向）。（注：图标会跟着被拖动）</p>
+<p> 玩家可以将地图拖动到很远（定义最远为极限范围），但是会回弹到它的可停留范围。</p>
+<p> 地图拖动的极限范围：沿着某一固定方向，地图的拖动距离具有极限值，极限约等于矩形可显示区域对应边长的3&#x2F;4,即水平方向可拖动距离为3&#x2F;4m，垂直方向可拖动距离为3&#x2F;4n。</p>
+<p> 拖动手感：地图移动距离相对鼠标的拖动距离是一个先快后慢（且初始斜率&#x3D;1）的缓动曲线。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps89.png" alt="img"></p>
+<p>​     滑动惯性：拖动小地图时如果在一个存在速度的时间点松手会有一个减速过程的滑动惯性。</p>
+<p> 地图的拖动回弹</p>
+<p>美术流程中会对小地图定义一个有效区域a*b（单位：像素）以及一个常量R，地图有效区域的边缘距离显示范围对应边的距离设为h。</p>
+<p>（注意：运行时a、b随放大缩小操作会变化）</p>
+<p>水平方向：ha&#x3D;(m-a)&#x2F;2</p>
+<p>垂直方向：hb&#x3D;(n-b)&#x2F;2</p>
+<p>地图处于初始位置时，当h&gt;R像素时，沿该方向无论拖动多远都会回弹到初始位置。</p>
+<p>地图处于初始位置时，当h&lt;R像素时，沿该方向拖动地图到h&gt;R时，地图最终会回弹到h&#x3D;R的位置。</p>
+<p> 拖动小地图时，如果角色箭头拖动到了地图可显示区域以外，则将角色箭头显示在可显示区域边缘并标明方向。</p>
+<p>​     如下图所示：注意小地图左下角的蓝色角色箭头。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps90.png" alt="img"></p>
+<p>​     如果此时点击角色箭头，需要尝试角色箭头居中，基于拖动范围的限制如果无法居中则尽量居中。</p>
+<h3 id="2-主界面雷达图"><a href="#2-主界面雷达图" class="headerlink" title="2.主界面雷达图"></a><strong>2.主界面雷达图</strong></h3><h4 id="2-1雷达图的美术资源组成"><a href="#2-1雷达图的美术资源组成" class="headerlink" title="2.1雷达图的美术资源组成"></a>2.1雷达图的美术资源组成</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps91.png" alt="img"></p>
+<p>(1) 圆形外框</p>
+<p>(2) 纯色透明背景</p>
+<p> 注：雷达图中使用的背景是纯色透明背景，与地图系统中的背景层是不同资源。</p>
+<p>(3) 小地图</p>
+<p> 雷达图是截取的小地图中以角色为中心的圆形范围，所以也会使用到小地图资源，且使用的分层切换规则和地图系统中完全一致。</p>
+<h4 id="2-2雷达图的显示半径"><a href="#2-2雷达图的显示半径" class="headerlink" title="2.2雷达图的显示半径"></a>2.2雷达图的显示半径</h4><p> （默认条件下）雷达图的显示半径对应场景中的30m，同时需要该参数可配置。（配的是显示半径对应的场景距离，希望帮忙换算一下）。</p>
+<p>​     该参数在不同箱庭中可能不一样，需要</p>
+<p>*雷达图在主界面上的位置和大小由美术设计确定，所以它的缩放程度依据美术确认的大小以及显示半径确定。</p>
+<p>*雷达图可能在不同类型的场景中缩放程度不一样，例如相比城区，我们可能希望野外能看到更大的视野范围。当下版本不考虑该功能。</p>
+<h4 id="2-3雷达图图标消失规则"><a href="#2-3雷达图图标消失规则" class="headerlink" title="2.3雷达图图标消失规则"></a>2.3雷达图图标消失规则</h4><p> 未处于追踪状态下的图标：当随着玩家移动图标触及雷达图边缘时，图标直接整个消失而非逐渐被边缘遮蔽。</p>
+<p>​     如下图所示：</p>
+<center><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="./雷达图图标.gif" width = "" height = ""></center>
+
+<p> 处于追踪状态下的图标：当玩家位于与该图标相同地图，且图标位于超出雷达图显示范围的位置时，图标将显示在雷达图边缘正确的方向上。</p>
+<p>​     如下图所示：注意右上角一直闪动在雷达图边缘的任务图标。</p>
+<center><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="./雷达图图标追踪.gif" width = "" height = ""></center>
+
+<h3 id="3-其他规则"><a href="#3-其他规则" class="headerlink" title="3.其他规则"></a><strong>3.其他规则</strong></h3><p> 未配置地图时，显示没有地图资源的雷达图。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/wps94.jpg" alt="img"> </p>
+<p> 未配置地图时，尝试打开地图系统时提示“无法查看地图”。</p>
+<h2 id="五、附录"><a href="#五、附录" class="headerlink" title="五、附录"></a><strong>五、附录</strong></h2><h3 id="1-配置参数"><a href="#1-配置参数" class="headerlink" title="1.配置参数"></a><strong>1.配置参数</strong></h3><p> 用于定位地图和场景的参考点，配置参考点的场景坐标。</p>
+<p> 定义当前层地图是多少层，以及不同层地图之间的连通关系。</p>
+<p> 定义当前层地图对应的地区id。</p>
+<p> 配置功能点图标以及定义图标从属的哪层地图。</p>
+<h3 id="2-调试参数"><a href="#2-调试参数" class="headerlink" title="2.调试参数"></a><strong>2.调试参数</strong></h3><p>（通用参数，用于调试效果）</p>
+<p> 雷达图的纯色透明背景需要暴露两个参数：①色彩、②透明度。</p>
+<p> 雷达图的显示半径对用场景中的m米（m为配置参数）。</p>
+<p> 地图的虚化显示状态需要暴露一个参数：①色彩、②透明度。</p>
+<p> 小地图拖动功能中，地图有效边缘距离可显示边缘最大距离的常量R（px）。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://deepseacolor.github.io">Lvjunhao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://deepseacolor.github.io/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/">http://deepseacolor.github.io/2023/08/10/%E7%AE%80%E6%98%93%E5%88%86%E5%B1%82%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://deepseacolor.github.io" target="_blank">深海酒馆</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://pic.imgdb.cn/item/64dae3c61ddac507cc8d5741.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/08/10/umg%E4%BD%BF%E7%94%A8%E5%88%86%E4%BA%AB/" title="umg基础操作"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/64dae3c11ddac507cc8d4adb.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">umg基础操作</div></div></a></div><div class="next-post pull-right"><a href="/2023/08/10/%E7%B3%BB%E7%BB%9F%E7%9B%AE%E6%A0%87%E4%BB%BB%E5%8A%A1%E6%8B%86%E8%A7%A3/" title="系统目标任务拆解"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/64dae3c11ddac507cc8d4adb.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">系统目标任务拆解</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.bing.com/th/id/OGC.bc159a29881425e3e8814868e240dafb?pid=1.7&amp;rurl=https%3a%2f%2fimg.siyuetian.net%2fsytconimg%2f2022%2f07%2f070414325483424.gif&amp;ehk=qp0v38QaAxsFF6JwQUZxPLZ%2b6aOYirVPpNz8%2bOI86cs%3d" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Lvjunhao</div><div class="author-info__description">我要成为游戏策划高手</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/DeepseaColor"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/DeepseaColor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:978424283@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎光临深海小酒馆</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%80%E6%98%93%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F"><span class="toc-text">简易地图系统</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%86%85%E5%AE%B9%E6%A6%82%E8%A6%81"><span class="toc-text">一、内容概要</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%90%8D%E8%AF%8D%E7%BA%A6%E5%AE%9A"><span class="toc-text">1. 名词约定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E5%88%9D%E7%89%88%E5%B7%A5%E4%BD%9C%E7%9B%AE%E6%A0%87"><span class="toc-text">2. 地图系统初版工作目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%9F%BA%E7%A1%80%E5%8A%9F%E8%83%BD%E7%AE%80%E8%BF%B0"><span class="toc-text">3. 基础功能简述</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5"><span class="toc-text">二、基础概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%AE%B1%E5%BA%AD%E5%88%86%E5%B1%82"><span class="toc-text">1. 箱庭分层</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%9C%BA%E6%99%AF%E5%92%8C%E5%9C%B0%E5%9B%BE%E7%9A%84%E6%96%B9%E5%90%91%E5%AF%B9%E5%BA%94"><span class="toc-text">2. 场景和地图的方向对应</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%9C%BA%E6%99%AF%E5%92%8C%E5%9C%B0%E5%9B%BE%E7%9A%84%E5%87%86%E7%A1%AE%E6%98%A0%E5%B0%84%E5%85%B3%E7%B3%BB"><span class="toc-text">3. 场景和地图的准确映射关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E8%B5%84%E6%BA%90%E9%85%8D%E7%BD%AE"><span class="toc-text">4.地图系统资源配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%9F%BA%E7%A1%80%E5%8A%9F%E8%83%BD"><span class="toc-text">三、基础功能</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%8E%A9%E5%AE%B6%E7%9A%84%E4%BD%8D%E7%BD%AE%E3%80%81%E9%9D%A2%E5%90%91%E4%BB%A5%E5%8F%8A%E8%A7%86%E9%87%8E%E6%96%B9%E5%90%91"><span class="toc-text">1.玩家的位置、面向以及视野方向</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1%E8%A7%92%E8%89%B2%E7%AE%AD%E5%A4%B4"><span class="toc-text">1.1角色箭头</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2%E8%A7%86%E9%87%8E%E6%96%B9%E5%90%91"><span class="toc-text">1.2视野方向</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3%E8%A7%92%E8%89%B2%E7%AE%AD%E5%A4%B4%E5%92%8C%E6%89%87%E5%BD%A2%E8%A7%86%E9%87%8E%E5%9C%A8%E9%9B%B7%E8%BE%BE%E5%9B%BE%E3%80%81%E5%B0%8F%E5%9C%B0%E5%9B%BE%E4%B8%AD%E7%9A%84%E5%91%88%E7%8E%B0%E8%A7%84%E5%88%99"><span class="toc-text">1.3角色箭头和扇形视野在雷达图、小地图中的呈现规则</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%A4%9A%E5%B1%82%E5%9C%B0%E5%9B%BE%E5%88%87%E6%8D%A2"><span class="toc-text">2. 多层地图切换</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1%E5%9C%B0%E5%9B%BE%E6%9C%89%E4%B8%89%E7%A7%8D%E6%98%BE%E7%A4%BA%E7%8A%B6%E6%80%81%EF%BC%9A%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E3%80%81%E8%99%9A%E5%8C%96%E6%98%BE%E7%A4%BA%E3%80%81%E4%B8%8D%E6%98%BE%E7%A4%BA"><span class="toc-text">2.1地图有三种显示状态：正常显示、虚化显示、不显示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2%E5%9C%B0%E5%9B%BE%E5%B1%82%E7%BA%A7%E6%98%BE%E7%A4%BA%E8%A7%84%E5%88%99"><span class="toc-text">2.2地图层级显示规则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3%E7%8E%A9%E5%AE%B6%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E5%B1%82%E7%BA%A7%E5%88%87%E6%8D%A2ui%E5%88%87%E6%8D%A2%E7%AE%B1%E5%BA%AD%E5%9C%B0%E5%9B%BE%E7%9A%84%E6%98%BE%E7%A4%BA%E5%B1%82"><span class="toc-text">2.3玩家可以通过层级切换ui切换箱庭地图的显示层</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4%E9%80%9A%E8%BF%87%E9%85%8D%E7%BD%AE%E5%AE%9A%E4%B9%89%E5%9C%B0%E5%9B%BE%E7%9A%84%E5%B1%82%E4%BB%A5%E5%8F%8A%E7%9B%B8%E9%82%BB%E5%85%B3%E7%B3%BB"><span class="toc-text">2.4通过配置定义地图的层以及相邻关系</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%9C%B0%E5%9B%BE%E5%9B%BE%E6%A0%87"><span class="toc-text">3.地图图标</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1%E5%9B%BE%E6%A0%87%E5%88%86%E7%B1%BB"><span class="toc-text">3.1图标分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2%E5%90%84%E7%B1%BB%E5%9B%BE%E6%A0%87%E7%9A%84%E5%8A%9F%E8%83%BD%E7%89%B9%E6%80%A7"><span class="toc-text">3.2各类图标的功能特性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3%E5%9B%BE%E6%A0%87%E8%BF%BD%E8%B8%AA"><span class="toc-text">3.3图标追踪</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4%E5%9B%BE%E6%A0%87%E9%85%8D%E7%BD%AE"><span class="toc-text">3.4图标配置</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E7%95%8C%E9%9D%A2%E5%8A%9F%E8%83%BD"><span class="toc-text">四、界面功能</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E7%95%8C%E9%9D%A2"><span class="toc-text">1.地图系统界面</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E7%95%8C%E9%9D%A2%E7%BE%8E%E6%9C%AF%E8%B5%84%E6%BA%90%E7%BB%84%E6%88%90"><span class="toc-text">1.1地图系统界面美术资源组成</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F%E7%95%8C%E9%9D%A2%E5%8F%82%E6%95%B0%E7%AE%80%E4%BB%8B"><span class="toc-text">1.2地图系统界面参数简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2%E6%89%93%E5%BC%80-%E5%85%B3%E9%97%AD%E5%9C%B0%E5%9B%BE%E7%B3%BB%E7%BB%9F"><span class="toc-text">1.2打开&#x2F;关闭地图系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3%E6%89%93%E5%BC%80%E7%B3%BB%E7%BB%9F%E7%95%8C%E9%9D%A2%E5%90%8E%E5%B1%8F%E8%94%BD%E7%8E%A9%E5%AE%B6%E7%9A%84%E5%9C%BA%E6%99%AF%E8%A1%8C%E4%B8%BA"><span class="toc-text">1.3打开系统界面后屏蔽玩家的场景行为</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4%E5%B0%8F%E5%9C%B0%E5%9B%BE%E7%9A%84%E6%94%BE%E5%A4%A7%E5%92%8C%E7%BC%A9%E5%B0%8F"><span class="toc-text">1.4小地图的放大和缩小</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-5%E5%B0%8F%E5%9C%B0%E5%9B%BE%E5%8F%AF%E6%98%BE%E7%A4%BA%E5%8C%BA%E5%9F%9F"><span class="toc-text">1.5小地图可显示区域</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-6%E5%B0%8F%E5%9C%B0%E5%9B%BE%E7%9A%84%E6%8B%96%E5%8A%A8"><span class="toc-text">1.6小地图的拖动</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%B8%BB%E7%95%8C%E9%9D%A2%E9%9B%B7%E8%BE%BE%E5%9B%BE"><span class="toc-text">2.主界面雷达图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1%E9%9B%B7%E8%BE%BE%E5%9B%BE%E7%9A%84%E7%BE%8E%E6%9C%AF%E8%B5%84%E6%BA%90%E7%BB%84%E6%88%90"><span class="toc-text">2.1雷达图的美术资源组成</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2%E9%9B%B7%E8%BE%BE%E5%9B%BE%E7%9A%84%E6%98%BE%E7%A4%BA%E5%8D%8A%E5%BE%84"><span class="toc-text">2.2雷达图的显示半径</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3%E9%9B%B7%E8%BE%BE%E5%9B%BE%E5%9B%BE%E6%A0%87%E6%B6%88%E5%A4%B1%E8%A7%84%E5%88%99"><span class="toc-text">2.3雷达图图标消失规则</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%85%B6%E4%BB%96%E8%A7%84%E5%88%99"><span class="toc-text">3.其他规则</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E9%99%84%E5%BD%95"><span class="toc-text">五、附录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0"><span class="toc-text">1.配置参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%B0%83%E8%AF%95%E5%8F%82%E6%95%B0"><span class="toc-text">2.调试参数</span></a></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By Lvjunhao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="30" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>

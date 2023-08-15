@@ -1,0 +1,392 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>相机基础需求 | 深海酒馆</title><meta name="author" content="Lvjunhao"><meta name="copyright" content="Lvjunhao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="第一章 概述一.1. 设计目的-提供良好的角色操控体验，使玩家能够更好的观察游戏世界。 -提供良好的战斗体验，强化战斗表现。 一.2. 设计思路-A3是一款二次元风格的JRPG，对标产品为FF7RE。我们期望A3产品具有以下特点： ​    -沉浸：高度自洽的游戏世界，流畅的操作体验。强调代入感和临场感。 ​    -精品化：次时代的游戏画面表现力，包括场景展现与战斗表现，能够被二次元用户认可。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="相机基础需求">
+<meta property="og:url" content="http://deepseacolor.github.io/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/index.html">
+<meta property="og:site_name" content="深海酒馆">
+<meta property="og:description" content="第一章 概述一.1. 设计目的-提供良好的角色操控体验，使玩家能够更好的观察游戏世界。 -提供良好的战斗体验，强化战斗表现。 一.2. 设计思路-A3是一款二次元风格的JRPG，对标产品为FF7RE。我们期望A3产品具有以下特点： ​    -沉浸：高度自洽的游戏世界，流畅的操作体验。强调代入感和临场感。 ​    -精品化：次时代的游戏画面表现力，包括场景展现与战斗表现，能够被二次元用户认可。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic.imgdb.cn/item/64dae3c11ddac507cc8d4adb.png">
+<meta property="article:published_time" content="2023-08-11T07:46:06.000Z">
+<meta property="article:modified_time" content="2023-08-11T07:49:26.311Z">
+<meta property="article:author" content="Lvjunhao">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/64dae3c11ddac507cc8d4adb.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://deepseacolor.github.io/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '相机基础需求',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-08-11 15:49:26'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.bing.com/th/id/OGC.bc159a29881425e3e8814868e240dafb?pid=1.7&amp;rurl=https%3a%2f%2fimg.siyuetian.net%2fsytconimg%2f2022%2f07%2f070414325483424.gif&amp;ehk=qp0v38QaAxsFF6JwQUZxPLZ%2b6aOYirVPpNz8%2bOI86cs%3d" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.imgdb.cn/item/64dae3c11ddac507cc8d4adb.png')"><nav id="nav"><span id="blog-info"><a href="/" title="深海酒馆"><span class="site-name">深海酒馆</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">相机基础需求</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-08-11T07:46:06.000Z" title="发表于 2023-08-11 15:46:06">2023-08-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-11T07:49:26.311Z" title="更新于 2023-08-11 15:49:26">2023-08-11</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%B8%B8%E6%88%8F%E7%B3%BB%E7%BB%9F/">游戏系统</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%B8%B8%E6%88%8F%E7%B3%BB%E7%BB%9F/%E7%9B%B8%E6%9C%BA/">相机</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>10分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="相机基础需求"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="第一章-概述"><a href="#第一章-概述" class="headerlink" title="第一章 概述"></a>第一章 <strong>概述</strong></h1><h2 id="一-1-设计目的"><a href="#一-1-设计目的" class="headerlink" title="一.1. 设计目的"></a>一.1. <strong>设计目的</strong></h2><p>-提供良好的角色操控体验，使玩家能够更好的观察游戏世界。</p>
+<p>-提供良好的战斗体验，强化战斗表现。</p>
+<h2 id="一-2-设计思路"><a href="#一-2-设计思路" class="headerlink" title="一.2. 设计思路"></a>一.2. <strong>设计思路</strong></h2><p>-A3是一款二次元风格的JRPG，对标产品为FF7RE。我们期望A3产品具有以下特点：</p>
+<p>​    -沉浸：高度自洽的游戏世界，流畅的操作体验。强调代入感和临场感。</p>
+<p>​    -精品化：次时代的游戏画面表现力，包括场景展现与战斗表现，能够被二次元用户认可。</p>
+<p>-在游戏中，相机功能是玩家最早和最常接触到的游戏体验之一，也是玩家对于游戏基础品质评判的重要依据，需要达到足够高的品质。</p>
+<h1 id="第二章-角色跟随的相机模式"><a href="#第二章-角色跟随的相机模式" class="headerlink" title="第二章 角色跟随的相机模式"></a>第二章 <strong>角色跟随的相机模式</strong></h1><h2 id="二-1-角色跟随模式相机"><a href="#二-1-角色跟随模式相机" class="headerlink" title="二.1. 角色跟随模式相机"></a>二.1. <strong>角色跟随模式相机</strong></h2><p>-在我们产品中，绝大多数情况下使用的都是角色跟随的相机模式，这是一种“焦点跟随相机”，需要实时地根据某个（某些）场景中的焦点坐标，计算相机位置</p>
+<p>-玩家借助角色跟随相机进行跑图和战斗，观察游戏箱庭世界和箱庭副本</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps98.png" alt="img"> </p>
+<p>1-角色跟随相机示意</p>
+<h2 id="二-2-角色跟随模式下相机的基础构成"><a href="#二-2-角色跟随模式下相机的基础构成" class="headerlink" title="二.2. 角色跟随模式下相机的基础构成"></a>二.2. <strong>角色跟随模式下相机的基础构成</strong></h2><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps99.jpg" alt="img"> </p>
+<p>-如上图所示，角色相机主要由三部分组成。相机视点、相机摇臂、相机焦点</p>
+<p>​    -相机视点:相机镜头所在的位置。</p>
+<p>​    -相机摇臂:相机视点到相机焦点的连线轨道是相机摇臂，玩家可以通过操作来进行摇臂的放缩</p>
+<p>​    -相机焦点:</p>
+<p>​        -角色相机的默认相机焦点是玩家的当前主控角色，具体会挂在角色的根骨骼上的某个偏移量的位置上，我们把这个挂点叫做角色的焦点插槽</p>
+<p>​        -焦点插槽的位置会根据当前摇臂的长度以及角色的不同有所区别，具体见下文相关规则</p>
+<h2 id="二-3-相机的基础参数"><a href="#二-3-相机的基础参数" class="headerlink" title="二.3. 相机的基础参数"></a>二.3. <strong>相机的基础参数</strong></h2><p>-相机的视锥体</p>
+<p>​    -游戏中镜头所呈现的景物是由视点发出的视椎体决定的，视锥提通常情况下是一个金字塔结构，相机镜头定位于金字塔的顶端，视锥体的中心线朝向焦点位置。可配置相机的最近和最远渲染范围</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps100.jpg" alt="img"> </p>
+<p>-FOV</p>
+<p>​    -FOV决定了相机拍摄游戏场景时的可视范围角度，FOV的实际含义是Camera视锥体接收画面的角度α</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps101.jpg" alt="img"> </p>
+<p>​    -3D游戏中一般FOV设定会在90到100左右</p>
+<h1 id="第三章-角色跟随相机的镜头运动"><a href="#第三章-角色跟随相机的镜头运动" class="headerlink" title="第三章 角色跟随相机的镜头运动"></a>第三章 <strong>角色跟随相机的镜头运动</strong></h1><h2 id="三-1-角色相机的镜头跟随规则"><a href="#三-1-角色相机的镜头跟随规则" class="headerlink" title="三.1. 角色相机的镜头跟随规则"></a>三.1. <strong>角色相机的镜头跟随规则</strong></h2><p>-当前角色发生移动，角色相机也会以摇臂为轴，跟随发生移动</p>
+<p>-镜头的跟随惯性</p>
+<p>​    -一些品质不错的游戏，镜头运动和角色运动之间都留有一些余地</p>
+<p>​    -不用追的太近，也不能离得太远，有一定的惯性</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps102.png" alt="img"> </p>
+<p>2-镜头跟随的惯性</p>
+<p>-镜头惯性的实现方式</p>
+<p>​    -单纯的时间延迟的方式来实现镜头的惯性会十分僵硬，一般都是用惯性系数来实现</p>
+<p>​    -角色在三维空间中移动时，镜头焦点会始终模仿角色的运动轨迹而运动，把问题简化，从三维空间下降到一维，假设角色只在X轴上左右移动，相机焦点当前的位置Xc，角色焦点插槽当前的位置Xg，游戏每次tick的间隔dtime，定义相机移动的惯性系数a，那么有：</p>
+<p>​        -Distance&#x3D;Xg-Xc</p>
+<p>​        -镜头每帧移动&#x3D;a<em>dtime</em>distance</p>
+<p>​    -通过以上计算方式，我们可以看出当相机焦点越接近角色，相机的运动越缓慢</p>
+<h2 id="三-2-角色相机的焦点插槽的位置"><a href="#三-2-角色相机的焦点插槽的位置" class="headerlink" title="三.2. 角色相机的焦点插槽的位置"></a>三.2. <strong>角色相机的焦点插槽的位置</strong></h2><p>-焦点插槽位置和角色的关系</p>
+<p>​    -焦点插槽是挂在角色根骨骼的一个相对偏移上</p>
+<p>​    -在相同的相机参数下，不同的角色这个偏移是不一样的，一般会考虑角色的体型，调整这个偏移使角色在画面中的构图更加合理</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps103.jpg" alt="img"> </p>
+<p>-焦点插槽位置和摇臂长度的关系</p>
+<p>​    -同一个角色，角色相机焦点插槽的位置和当前摇臂的长度相关</p>
+<p>​    -一般来说摇臂从较远位置到最近位置的过度的过程中，随着摇臂的拉近，焦点插槽会有个向上的偏移。这个偏移主要是让人物在画面中的构图更加合理</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps104.jpg" alt="img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps105.jpg" alt="img"> </p>
+<p>-焦点插槽位置的具体确定方式</p>
+<p>​    -根据上述规则，我们需要制定某个角色的焦点插槽位置和摇臂长度之间的函数关系，这个函数关系是个调试好的函数曲线，我们可以在ue4中直接拉出一条合适的相机曲线来导出使用</p>
+<p>​    -一般情况下如果两个角色的体型近似，使用同样的函数曲线过度即可</p>
+<h2 id="三-3-玩家对角色相机的操控"><a href="#三-3-玩家对角色相机的操控" class="headerlink" title="三.3. 玩家对角色相机的操控"></a>三.3. <strong>玩家对角色相机的操控</strong></h2><p>-玩家操控相机的方式</p>
+<table>
+<thead>
+<tr>
+<th><em><strong>*行为*</strong></em></th>
+<th><em><strong>*移动端操作*</strong></em></th>
+<th><em><strong>*pc端键位*</strong></em></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>相机镜头移动</td>
+<td>非功能热区按住屏幕滑动</td>
+<td>鼠标移动</td>
+</tr>
+<tr>
+<td>相机摇臂拉近&#x2F;拉远</td>
+<td>非功能热区双指放缩</td>
+<td>鼠标滚轮向前&#x2F;向后滚</td>
+</tr>
+</tbody></table>
+<p>​    -在PC端玩家通过移动鼠标，旋转游戏镜头。通过滚轮前后滚来放缩相机摇臂距离</p>
+<p>​    -在移动端，玩家通过手指点触滑动屏幕来旋转游戏镜头。通过双指放缩操作来放缩相机摇臂距离</p>
+<p>​        -移动端操作相机的区域为所有非功能热区</p>
+<p>-玩家操控相机的运动形式</p>
+<p>​    -玩家操控相机镜头移动:</p>
+<p>​        -玩家操控相机的移动主要是操控相机以焦点为圆心，以摇臂长度为半径，沿着圆球的轨道进行相机旋转</p>
+<p>​        -相机有三种旋转方式，其中常用的是以焦点为圆心，以摇臂长度为半径的偏航角和俯仰角旋转。旋转角一般只在一些3d空中驾驶模拟中才用到</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps106.jpg" alt="img"> </p>
+<p>​        -移动端按住屏幕左右滑动&#x2F;PC端左右移动鼠标，可以控制相机水平角度旋转，可以旋转360度。向右滑动相机向左旋转，向左滑动相机向右旋转</p>
+<p>² 可以连续转动相机（转过一周后可继续转动）</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps107.png" alt="img"> </p>
+<p> 3-偏航角旋转示意</p>
+<p>​        -移动端按住屏幕上下滑动&#x2F;PC端上下移动鼠标，为调节相机俯仰角度，角度有限制，上下角度分别配置。向上滑动相机降低，向下滑动相机升高</p>
+<p>² 俯仰角度限制支持配置区间，但肯定会大于-90°，且小于90°</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps108.png" alt="img"> </p>
+<p> 4-俯仰角旋转示意</p>
+<p>​        -当玩家斜方向进行镜头移动的操作时，实际上是同时在进行水平方向和垂直方向的操作</p>
+<p>​    -玩家操控摇臂拉近拉远:</p>
+<p>​        -移动端双指张开为镜头推进缩短摇臂长度，双指收拢为镜头拉远加长摇臂长度</p>
+<p>​        -PC端滚轮前滚为缩短摇臂长度，滚轮后滚为镜头拉远加长摇臂长度。</p>
+<p>​        -角色相机的玩家控制摇臂最远和最近长度支持配置</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps109.png" alt="img"> </p>
+<p>​    5-摇臂长度调整示意</p>
+<h2 id="三-4-角色跟随相机的参数配置"><a href="#三-4-角色跟随相机的参数配置" class="headerlink" title="三.4. 角色跟随相机的参数配置"></a>三.4. <strong>角色跟随相机的参数配置</strong></h2><p>-角色跟随相机的基础默认参数</p>
+<p>​    -包含视距范围、FOV、后处理等参数</p>
+<p>-玩家操控相机的一些参数需求</p>
+<p>​    -对玩家开放的参数后续可能会在设置里由玩家自由配置</p>
+<table>
+<thead>
+<tr>
+<th><em><strong>*参数条目*</strong></em></th>
+<th><em><strong>*参数概述*</strong></em></th>
+<th><em><strong>*是否对玩家开放*</strong></em></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>镜头俯仰角度区间</td>
+<td>支持配置区间，区间必定位于(-90°,90°)以内</td>
+<td>否</td>
+</tr>
+<tr>
+<td>摇臂调节范围</td>
+<td>支持配置区间</td>
+<td>否</td>
+</tr>
+<tr>
+<td>镜头水平移动灵敏度</td>
+<td>鼠标&#x2F;手指的移动距离转化为镜头偏航角度的比例</td>
+<td>可能</td>
+</tr>
+<tr>
+<td>镜头垂直移动灵敏度</td>
+<td>鼠标&#x2F;手指的移动距离转化为镜头俯仰角度的比例</td>
+<td>可能</td>
+</tr>
+<tr>
+<td>摇臂调节灵敏度</td>
+<td>鼠标中键的滚动距离&#x2F;双指方所得距离，转化为实际视距的缩放长度大小</td>
+<td>可能</td>
+</tr>
+<tr>
+<td>镜头默认俯仰角度</td>
+<td>默认数值</td>
+<td>否</td>
+</tr>
+<tr>
+<td>镜头默认偏航角度</td>
+<td>一般为玩家角色当前朝向</td>
+<td>否</td>
+</tr>
+<tr>
+<td>镜头默认摇臂长度</td>
+<td>默认数值</td>
+<td>否</td>
+</tr>
+</tbody></table>
+<h1 id="第四章-物体的相机碰撞体"><a href="#第四章-物体的相机碰撞体" class="headerlink" title="第四章 物体的相机碰撞体"></a>第四章 <strong>物体的相机碰撞体</strong></h1><h2 id="四-1-物体的相机碰撞体定义"><a href="#四-1-物体的相机碰撞体定义" class="headerlink" title="四.1. 物体的相机碰撞体定义"></a>四.1. <strong>物体的相机碰撞体定义</strong></h2><p>-我们需要定义某个物体的相机碰撞体，这个碰撞体的作用就是用来和相机或者相机摇臂发生碰撞的，从而进行碰撞后的处理的</p>
+<p>-一般情况下程序支持根据物体的模型，自动生成相机的碰撞体。同时也需要支持相机碰撞体的手动添加、删除和修改</p>
+<p>-我们可以定义这个碰撞体和相机的碰撞发生类型，同时也可以定义碰撞发生后的处理方式 </p>
+<h2 id="四-2-相机碰撞体的碰撞类型和碰撞处理"><a href="#四-2-相机碰撞体的碰撞类型和碰撞处理" class="headerlink" title="四.2. 相机碰撞体的碰撞类型和碰撞处理"></a>四.2. <strong>相机碰撞体的碰撞类型和碰撞处理</strong></h2><p>-碰撞类型类型1:与摇臂碰撞，造成摇臂遮挡 </p>
+<p>​    -此种类型下，有如下两种处理方式</p>
+<p>​    -摇臂遮挡后的相机拉近</p>
+<p>​    -摇臂遮挡后的物体外显隐藏</p>
+<p>-碰撞类型类型2:与相机碰撞，造成相机探视到物体模型内部</p>
+<p>​    -此种类型下，有如下一种处理方式</p>
+<p>​    -相机碰撞后的物体外显隐藏</p>
+<h1 id="第五章-相机的摇臂遮挡"><a href="#第五章-相机的摇臂遮挡" class="headerlink" title="第五章 相机的摇臂遮挡"></a>第五章 <strong>相机的摇臂遮挡</strong></h1><h2 id="五-1-摇臂遮挡的相机拉近处理"><a href="#五-1-摇臂遮挡的相机拉近处理" class="headerlink" title="五.1. 摇臂遮挡的相机拉近处理"></a>五.1. <strong>摇臂遮挡的相机拉近处理</strong></h2><p>-当焦点和视点的整条摇臂线上出现使相机拉近的遮挡物，这个时候就需要对相机进行拉近处理</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps110.jpg" alt="img"> </p>
+<p>-相机拉近处理的方式</p>
+<p>​    -此种处理是当碰撞发生的瞬间，镜头会缩短摇臂且****瞬间****拉近到一个由程序计算的合法位置(最短运动距离让摇臂线无遮挡的位置)，我们可看如下示例帮助理解</p>
+<p>​        -示例:假设某个遮挡物突然出现在相机和角色之间，对摇臂进行了遮挡。此时相机摇臂会瞬间(一次tick时间)缩短，是相机盒处在缩短后最远距离无碰撞的位置上</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps111.jpg" alt="img"> </p>
+<p>​    -游戏中的摇臂遮挡拉近示意</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps112.png" alt="img"> </p>
+<p>6-FF7中碰撞后的相机拉近</p>
+<p>-碰撞镜头拉近后的摇臂长度复位</p>
+<p>​    -当结束碰撞后，需要将相机摇臂长度复位</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps113.png" alt="img"> </p>
+<p>7-原神摇臂复位参考</p>
+<p>​        -如下图所示，摇臂初始长度为d</p>
+<p>​        -当角色向右移动时相机摇臂和遮挡物发生碰撞，相机被拉近</p>
+<p>​        -在碰撞的过程中，摇臂就像一个自然长度为d的可压缩的弹簧，时刻想恢复d的长度</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps114.jpg" alt="img"> </p>
+<p>​    -摇臂长度的复位需要一个差值过度的过程</p>
+<p>​        -为了防止镜头的跳变，弹簧臂的长度复位过程并不是瞬间的</p>
+<p>​        -需要以一定速度的差值过度</p>
+<p>​        -摇臂长度复位的插值速度是一个全局的常量，可以配置</p>
+<p>​    -摇臂长度复位期间的操作响应</p>
+<p>​        -摇臂长度复位期间，响应玩家对摇臂长度的操作，并且打断当前复位过程</p>
+<p>​        -因为复位是个相对缓的过程，这个过程玩家的操作必然需要响应，否则操作阻塞感会很重</p>
+<h2 id="五-2-摇臂遮挡后的遮挡物外显隐藏"><a href="#五-2-摇臂遮挡后的遮挡物外显隐藏" class="headerlink" title="五.2. 摇臂遮挡后的遮挡物外显隐藏"></a>五.2. <strong>摇臂遮挡后的遮挡物外显隐藏</strong></h2><p>-这种方式常见应用于树木中树叶的遮挡</p>
+<p>​    -如下图原神的处理方式是遮挡后整体树叶部分会由原先的状态过渡成固定透明度的半透状态</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps115.png" alt="img"> </p>
+<p>8-原神树叶遮挡摇臂后的半透处理</p>
+<p>​    -需要支持物体和相机摇臂碰撞产生摇臂遮挡后，对物体进行半透化的处理</p>
+<p>​        -需要有透明度参数配置</p>
+<p>​        -具体透明的效果由美术把控</p>
+<h1 id="第六章-相机的碰撞"><a href="#第六章-相机的碰撞" class="headerlink" title="第六章 相机的碰撞"></a>第六章 <strong>相机的碰撞</strong></h1><h2 id="六-1-相机碰撞后的遮挡物外显隐藏处理"><a href="#六-1-相机碰撞后的遮挡物外显隐藏处理" class="headerlink" title="六.1. 相机碰撞后的遮挡物外显隐藏处理"></a>六.1. <strong>相机碰撞后的遮挡物外显隐藏处理</strong></h2><p>-这种碰撞类型，常见于场景中的NPC和怪物，他们会遮挡摇臂并且不进行处理，但是为了防止镜头穿到其模型内部，我们需要“相机碰撞”来对物体的外显进行隐藏处理。对于物体隐藏的处理，一般常见的有两种方案，具体选哪种方案需要看具体美术</p>
+<p>-方案一:类似原神，发生碰撞后物体会进入半透状态，继续拉近相机物体透明度逐渐变低，直到达到某个位置完全隐藏</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps116.png" alt="img"> </p>
+<p>​    -相机碰撞的判定方式</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps117.jpg" alt="img"> </p>
+<p>​        -示意图说明:这是一个俯视角的示意图，其中</p>
+<p>² 紫线代表相机的视锥体的俯视图截面</p>
+<p>² 蓝色虚线代表相机的模型开始隐藏判定体</p>
+<p>² 红色虚线代表相机的模型完全隐藏判定体</p>
+<p>​        -举例一个配置了和相机发生碰撞隐藏模型的NPC</p>
+<p>² 当他的相机碰撞体和相机的模型隐藏判定体(上图蓝圈)产生碰撞，并且该NPC至少有一部分处在视锥体的范围内，则该NPC会触发模型隐藏的处理，以一定透明度开始隐藏</p>
+<p>² 随着模型越来越靠近上图红圈范围，物体透明度越来越高，直到和红圈产生碰撞，物体完全隐藏</p>
+<p>² 如果此时NPC远离红圈范围透明度逐渐恢复，直至离开蓝圈范围，NPC外显恢复至完全正常状态</p>
+<p>-方案二:类似FF7，无半透的过程状态。发生碰撞后物体有个消失过程直接消失，碰撞结束后物体有个显示过程直接显示</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps118.png" alt="img"> </p>
+<p>​    -相机碰撞的判定方式</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/wps119.jpg" alt="img"> </p>
+<p>​        -示意图说明:这是一个俯视角的示意图，其中</p>
+<p>² 紫线代表相机的视锥体的俯视图截面</p>
+<p>² 蓝色虚线代表相机的模型隐藏判定体</p>
+<p>​        -举例一个配置了和相机发生碰撞隐藏模型的NPC</p>
+<p>² 当他的相机碰撞体和相机的模型隐藏判定体(上图蓝圈)产生碰撞，并且该NPC至少有一部分处在视锥体的范围内，则该NPC会进行隐藏。当期离开蓝圈范围后，该NPC会显示出来</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://deepseacolor.github.io">Lvjunhao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://deepseacolor.github.io/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/">http://deepseacolor.github.io/2023/08/11/%E7%9B%B8%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9C%80%E6%B1%82/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://deepseacolor.github.io" target="_blank">深海酒馆</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://pic.imgdb.cn/item/64dae3c11ddac507cc8d4adb.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/08/12/%E9%92%A5%E5%8C%99%E6%A6%82%E5%BF%B5%E7%8E%A9%E6%B3%95%E6%BC%94%E7%A4%BA/" title="钥匙概念玩法演示"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/64dae3c31ddac507cc8d4f4b.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">钥匙概念玩法演示</div></div></a></div><div class="next-post pull-right"><a href="/2023/08/11/%E4%BB%BB%E5%8A%A1%E7%B3%BB%E7%BB%9F/" title="任务系统"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/64dae3c41ddac507cc8d535b.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">任务系统</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.bing.com/th/id/OGC.bc159a29881425e3e8814868e240dafb?pid=1.7&amp;rurl=https%3a%2f%2fimg.siyuetian.net%2fsytconimg%2f2022%2f07%2f070414325483424.gif&amp;ehk=qp0v38QaAxsFF6JwQUZxPLZ%2b6aOYirVPpNz8%2bOI86cs%3d" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Lvjunhao</div><div class="author-info__description">我要成为游戏策划高手</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/DeepseaColor"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/DeepseaColor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:978424283@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎光临深海小酒馆</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%BF%B0"><span class="toc-text">第一章 概述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-1-%E8%AE%BE%E8%AE%A1%E7%9B%AE%E7%9A%84"><span class="toc-text">一.1. 设计目的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-2-%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF"><span class="toc-text">一.2. 设计思路</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E8%A7%92%E8%89%B2%E8%B7%9F%E9%9A%8F%E7%9A%84%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%BC%8F"><span class="toc-text">第二章 角色跟随的相机模式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-1-%E8%A7%92%E8%89%B2%E8%B7%9F%E9%9A%8F%E6%A8%A1%E5%BC%8F%E7%9B%B8%E6%9C%BA"><span class="toc-text">二.1. 角色跟随模式相机</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-2-%E8%A7%92%E8%89%B2%E8%B7%9F%E9%9A%8F%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%9B%B8%E6%9C%BA%E7%9A%84%E5%9F%BA%E7%A1%80%E6%9E%84%E6%88%90"><span class="toc-text">二.2. 角色跟随模式下相机的基础构成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-3-%E7%9B%B8%E6%9C%BA%E7%9A%84%E5%9F%BA%E7%A1%80%E5%8F%82%E6%95%B0"><span class="toc-text">二.3. 相机的基础参数</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E8%A7%92%E8%89%B2%E8%B7%9F%E9%9A%8F%E7%9B%B8%E6%9C%BA%E7%9A%84%E9%95%9C%E5%A4%B4%E8%BF%90%E5%8A%A8"><span class="toc-text">第三章 角色跟随相机的镜头运动</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-1-%E8%A7%92%E8%89%B2%E7%9B%B8%E6%9C%BA%E7%9A%84%E9%95%9C%E5%A4%B4%E8%B7%9F%E9%9A%8F%E8%A7%84%E5%88%99"><span class="toc-text">三.1. 角色相机的镜头跟随规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-2-%E8%A7%92%E8%89%B2%E7%9B%B8%E6%9C%BA%E7%9A%84%E7%84%A6%E7%82%B9%E6%8F%92%E6%A7%BD%E7%9A%84%E4%BD%8D%E7%BD%AE"><span class="toc-text">三.2. 角色相机的焦点插槽的位置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-3-%E7%8E%A9%E5%AE%B6%E5%AF%B9%E8%A7%92%E8%89%B2%E7%9B%B8%E6%9C%BA%E7%9A%84%E6%93%8D%E6%8E%A7"><span class="toc-text">三.3. 玩家对角色相机的操控</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-4-%E8%A7%92%E8%89%B2%E8%B7%9F%E9%9A%8F%E7%9B%B8%E6%9C%BA%E7%9A%84%E5%8F%82%E6%95%B0%E9%85%8D%E7%BD%AE"><span class="toc-text">三.4. 角色跟随相机的参数配置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E7%89%A9%E4%BD%93%E7%9A%84%E7%9B%B8%E6%9C%BA%E7%A2%B0%E6%92%9E%E4%BD%93"><span class="toc-text">第四章 物体的相机碰撞体</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B-1-%E7%89%A9%E4%BD%93%E7%9A%84%E7%9B%B8%E6%9C%BA%E7%A2%B0%E6%92%9E%E4%BD%93%E5%AE%9A%E4%B9%89"><span class="toc-text">四.1. 物体的相机碰撞体定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B-2-%E7%9B%B8%E6%9C%BA%E7%A2%B0%E6%92%9E%E4%BD%93%E7%9A%84%E7%A2%B0%E6%92%9E%E7%B1%BB%E5%9E%8B%E5%92%8C%E7%A2%B0%E6%92%9E%E5%A4%84%E7%90%86"><span class="toc-text">四.2. 相机碰撞体的碰撞类型和碰撞处理</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E7%9B%B8%E6%9C%BA%E7%9A%84%E6%91%87%E8%87%82%E9%81%AE%E6%8C%A1"><span class="toc-text">第五章 相机的摇臂遮挡</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94-1-%E6%91%87%E8%87%82%E9%81%AE%E6%8C%A1%E7%9A%84%E7%9B%B8%E6%9C%BA%E6%8B%89%E8%BF%91%E5%A4%84%E7%90%86"><span class="toc-text">五.1. 摇臂遮挡的相机拉近处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94-2-%E6%91%87%E8%87%82%E9%81%AE%E6%8C%A1%E5%90%8E%E7%9A%84%E9%81%AE%E6%8C%A1%E7%89%A9%E5%A4%96%E6%98%BE%E9%9A%90%E8%97%8F"><span class="toc-text">五.2. 摇臂遮挡后的遮挡物外显隐藏</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E7%9B%B8%E6%9C%BA%E7%9A%84%E7%A2%B0%E6%92%9E"><span class="toc-text">第六章 相机的碰撞</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD-1-%E7%9B%B8%E6%9C%BA%E7%A2%B0%E6%92%9E%E5%90%8E%E7%9A%84%E9%81%AE%E6%8C%A1%E7%89%A9%E5%A4%96%E6%98%BE%E9%9A%90%E8%97%8F%E5%A4%84%E7%90%86"><span class="toc-text">六.1. 相机碰撞后的遮挡物外显隐藏处理</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By Lvjunhao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="30" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
