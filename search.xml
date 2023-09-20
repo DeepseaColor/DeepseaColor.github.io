@@ -4,6 +4,75 @@
   
     
     <entry>
+      <title>系统设计和落地</title>
+      <link href="/2023/09/20/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E5%92%8C%E8%90%BD%E5%9C%B0/"/>
+      <url>/2023/09/20/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E5%92%8C%E8%90%BD%E5%9C%B0/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>系统设计</strong></p><h1 id="一、-前期准备"><a href="#一、-前期准备" class="headerlink" title="一、*前期准备*"></a><strong>一、</strong><em><strong>*前期准备*</strong></em></h1><h2 id="1-1确认设计的核心要素"><a href="#1-1确认设计的核心要素" class="headerlink" title="1.1确认设计的核心要素"></a>1.1确认设计的核心要素</h2><p> 设计目的</p><p> 内容简介</p><p> 界定系统的范围（系统包含的范围和内容要明确）</p><p> 注意事项</p><h2 id="1-2案例分析（寻找示例对象）"><a href="#1-2案例分析（寻找示例对象）" class="headerlink" title="1.2案例分析（寻找示例对象）"></a>1.2案例分析（寻找示例对象）</h2><p> 归纳：所有互斥状态的归纳为一类，习惯排列组合的思维方式杜绝遗漏</p><p> 构建应用情景的模型</p><h1 id="二、-系统规则初步设计"><a href="#二、-系统规则初步设计" class="headerlink" title="二、*系统规则初步设计*"></a><strong>二、</strong><em><strong>*系统规则初步设计*</strong></em></h1><p>系统的职责是规则的制定与规则的呈现</p><h2 id="2-1系统设计草案"><a href="#2-1系统设计草案" class="headerlink" title="2.1系统设计草案"></a>2.1系统设计草案</h2><ul><li><p>先简单捋一下各个模块</p></li><li><p>功能列表</p></li><li><p>基础功能</p></li><li><p>界面功能</p></li><li><p>美术资产列表</p></li><li><p>配置参数、调试参数</p></li><li><p>关键设计的思考、缘由</p></li><li><p>设计中纠结争议的地方、宣讲时大概率需要讨论，可能有修改的地方</p></li></ul><h2 id="2-2完善为设计文档"><a href="#2-2完善为设计文档" class="headerlink" title="2.2完善为设计文档"></a>2.2完善为设计文档</h2><h1 id="三、-创建开发文档"><a href="#三、-创建开发文档" class="headerlink" title="三、*创建开发文档*"></a><strong>三、</strong><em><strong>*创建开发文档*</strong></em></h1><h2 id="3-1开发要分多个阶段：第一阶段要做什么、有什么要求"><a href="#3-1开发要分多个阶段：第一阶段要做什么、有什么要求" class="headerlink" title="3.1开发要分多个阶段：第一阶段要做什么、有什么要求"></a>3.1开发要分多个阶段：第一阶段要做什么、有什么要求</h2><p> 程序要做什么</p><p> 美术要做什么</p><h2 id="3-2具体工作内容详细列表：功能需求列表、美术需求列表"><a href="#3-2具体工作内容详细列表：功能需求列表、美术需求列表" class="headerlink" title="3.2具体工作内容详细列表：功能需求列表、美术需求列表"></a>3.2具体工作内容详细列表：功能需求列表、美术需求列表</h2><h1 id="四、-系统界面"><a href="#四、-系统界面" class="headerlink" title="四、*系统界面*"></a><strong>四、</strong><em><strong>*系统界面*</strong></em></h1><p>这里会思考对美术的要求</p><h2 id="4-1交互体验？"><a href="#4-1交互体验？" class="headerlink" title="4.1交互体验？"></a>4.1交互体验？</h2><h3 id="设计原则"><a href="#设计原则" class="headerlink" title="设计原则"></a>设计原则</h3><p>· 可视性：功能可视性越好，越方便用户发现和了解使用方法</p><p>· 反馈：反馈与活动相关的信息，以便用户能够继续下一步操作</p><p>· 限制：在特定时刻显示用户操作，以防误操作</p><p>· 映射：准确表达控制及其效果之间的关系</p><p>· 一致性：保证同一系统的同一功能的表现及操作一致</p><p>· 启发性：充分准确的操作提示</p><h3 id="准则"><a href="#准则" class="headerlink" title="准则"></a>准则</h3><p>· 1.伦理的（能体谅人，有帮助）不伤害、改善人的状况</p><p>· 2.有意图的，能帮助用户实现他们的目标和渴望</p><p>· 3.注重实效，帮助委托的组织实现它们的目标</p><p>· 4.优雅的：最简单的完整方案、拥有内部的一致性、合适的容纳和情感</p><h2 id="4-2信息传递"><a href="#4-2信息传递" class="headerlink" title="4.2信息传递"></a>4.2信息传递</h2><h3 id="信息传递的级别"><a href="#信息传递的级别" class="headerlink" title="信息传递的级别"></a>信息传递的级别</h3><h3 id="简洁而专注"><a href="#简洁而专注" class="headerlink" title="简洁而专注"></a>简洁而专注</h3><ul><li><p>简洁</p><ul><li><p>主要信息不遗漏，不易被忽视</p></li><li><p>非主要信息通过更细节的方式展示，而不过分明显</p></li></ul></li></ul><h1 id="五、-系统规则"><a href="#五、-系统规则" class="headerlink" title="五、*系统规则*"></a><strong>五、</strong><em><strong>*系统规则*</strong></em></h1><p>这里会详细思考对程序功能的需求</p><h2 id="5-1逻辑的完整性"><a href="#5-1逻辑的完整性" class="headerlink" title="5.1逻辑的完整性"></a>5.1逻辑的完整性</h2><p>覆盖所有可能的操作分支</p><p>覆盖所有对应的表现</p><h2 id="5-2设计的边界"><a href="#5-2设计的边界" class="headerlink" title="5.2设计的边界"></a>5.2设计的边界</h2><p>忽略纯表现设计，这个应该由美术决定</p><p>增强抽象思维以及概念描述：这是个什么东西，它会应用在哪些情况</p><h1 id="六、-设计实现的轨迹"><a href="#六、-设计实现的轨迹" class="headerlink" title="六、*设计实现的轨迹*"></a><strong>六、</strong><em><strong>*设计实现的轨迹*</strong></em></h1><p>这里思考怎么让整个流程运转起来，后期配置怎么运转起来。</p><ul><li>实际开发过程中大概率不能一次到位完整开发所有构想，程序也无法理解全部构想</li><li>要充分思考系统开发这件事的发展轨迹，并且去掌握它</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 方法总结 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 设计方法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关卡设计的一些技巧</title>
+      <link href="/2023/09/20/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8A%80%E5%B7%A7/"/>
+      <url>/2023/09/20/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8A%80%E5%B7%A7/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>关卡设计的技巧方法</p><h1 id="1-引导"><a href="#1-引导" class="headerlink" title="1.引导"></a><strong>1.引导</strong></h1><p>​雪地里的树枝、山脉的倾斜感</p><p>​可得性：门前堆放的杂物、堆积的树枝表达不可通行感。</p><h1 id="2-不完全依赖文字表达叙事"><a href="#2-不完全依赖文字表达叙事" class="headerlink" title="2.不完全依赖文字表达叙事"></a><strong>2.不完全依赖文字表达叙事</strong></h1><p>​叙事手段：明示、暗示、涌现</p><p>​明示：过长动画、台词对话、文本。</p><p>​暗示：不告诉玩家故事是什么、玩家通过自己观察来发现故事。</p><p>​环境叙事：天花板上的气球，可能意味着发生过聚会；</p><p>​涌现叙事：玩家以自己的行为来构造故事。</p><h1 id="3-告诉玩家需要去做什么，不要告诉怎么做。"><a href="#3-告诉玩家需要去做什么，不要告诉怎么做。" class="headerlink" title="3.告诉玩家需要去做什么，不要告诉怎么做。"></a><strong>3.告诉玩家需要去做什么，不要告诉怎么做。</strong></h1><p>​鼓励玩家尝试使用不同的方式去达成目标，鼓励玩家即兴创作。</p><p>​example：并行任务，其他任务会降低当前任务的难度&#x2F;。</p><h1 id="4-不断教给玩家新的东西。"><a href="#4-不断教给玩家新的东西。" class="headerlink" title="4.不断教给玩家新的东西。"></a><strong>4.不断教给玩家新的东西。</strong></h1><p>​书—-游戏设计的快乐理论。游戏体验的设计流程：</p><p>​Learn、play、challenge、surprise</p><p>​新机制，练习新机制，有挑战的玩法尝试新机制，疯狂的东西来提供惊喜</p><p>​ipmt理论：intro-practice-master-twist</p><h1 id="5-要给玩家惊喜。"><a href="#5-要给玩家惊喜。" class="headerlink" title="5.要给玩家惊喜。"></a><strong>5.要给玩家惊喜。</strong></h1><p>​过山车式的情绪体验。（指不断起伏的体验）</p><h1 id="6-好的关卡让玩家强大。"><a href="#6-好的关卡让玩家强大。" class="headerlink" title="6.好的关卡让玩家强大。"></a><strong>6.好的关卡让玩家强大。</strong></h1><p>​能够改变世界的强烈反馈感知。</p><h1 id="7-好的关卡是简单、普通、困难的。"><a href="#7-好的关卡是简单、普通、困难的。" class="headerlink" title="7.好的关卡是简单、普通、困难的。"></a><strong>7.好的关卡是简单、普通、困难的。</strong></h1><p>​提供多种不同难度的游玩路径。</p><h1 id="8-好的关卡是高效的。"><a href="#8-好的关卡是高效的。" class="headerlink" title="8.好的关卡是高效的。"></a><strong>8.好的关卡是高效的。</strong></h1><p>​模块化关卡，设计关卡的拼接模块。可以拼第一个关卡，也可以拼第二个关卡等等···</p><p>​参考死亡细胞。</p><h1 id="9-好的关卡能够创造情感。"><a href="#9-好的关卡能够创造情感。" class="headerlink" title="9.好的关卡能够创造情感。"></a><strong>9.好的关卡能够创造情感。</strong></h1><p>​窗户的高度低于膝盖，会给人一种力量感或偷窥感。</p><p>​窗户的高度高于肩膀，会有一种压迫感和囚禁感。</p><p>​狭窄的角落来限制玩家的视野，来让玩家保持紧张和多疑</p><p>​关卡像迷宫一样扭曲，来创造困惑和恐慌的情绪。</p><p>​开阔的场景来创造孤独感和史诗感。</p><p>​从情感出发，想要给玩家怎样的情感，然后再去思考空间、故事、游戏机制等。</p><h1 id="10-好的关卡由游戏机制驱动的"><a href="#10-好的关卡由游戏机制驱动的" class="headerlink" title="10.好的关卡由游戏机制驱动的"></a><strong>10.好的关卡由游戏机制驱动的</strong></h1><p>​玩法机制不仅用于战斗，还可以用于玩法解密。</p><p>想一想战神4的丢斧头，既可以用来战斗也可以用来参与场景解密玩法。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 方法总结 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 设计方法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>王者荣耀世界观</title>
+      <link href="/2023/09/20/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B8%96%E7%95%8C%E8%A7%82/"/>
+      <url>/2023/09/20/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B8%96%E7%95%8C%E8%A7%82/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>王者荣耀世界观</strong></p><h1 id="上古时期"><a href="#上古时期" class="headerlink" title="*上古时期*"></a><em><strong>*上古时期*</strong></em></h1><h2 id="超智慧生物（神）"><a href="#超智慧生物（神）" class="headerlink" title="超智慧生物（神）"></a>超智慧生物（神）</h2><p>利用强大的宇宙能源【方舟核心】建立起高度发达的文明，却由于最终难以掌握【方舟核心】的力量，使赖以生存的母星遭受毁灭。</p><p>他们漂泊在宇宙之中，寻找下一个栖身之所，并找到了一个蕴藏着丰裕能源的蔚蓝星球——也就是“王者大陆”。</p><p>超智慧生物降临在这颗原始星球上，自诩为【神】，重新开始利用【方舟核心】创立文明。他们建造了【十二奇迹】，日之塔便是其中最重要的代表，它不断抽取王者大陆的地底能源，为新的文明提供看似无限的动力。</p><h2 id="方舟核心"><a href="#方舟核心" class="headerlink" title="方舟核心"></a>方舟核心</h2><p>强大的宇宙能源【方舟核心】（类似于漫威世界的无限宝石）</p><h2 id="十二奇迹"><a href="#十二奇迹" class="headerlink" title="十二奇迹"></a>十二奇迹</h2><p>神创造，日之塔是其中之一。</p><h2 id="王者大陆"><a href="#王者大陆" class="headerlink" title="王者大陆"></a>王者大陆</h2><p>一个蕴藏着丰裕能源的蔚蓝星球</p><h2 id="兽人（魔种）"><a href="#兽人（魔种）" class="headerlink" title="兽人（魔种）"></a>兽人（魔种）</h2><p>王者大陆上的原住民是兽人，拥有强健的体魄但尚未开化；【神】们并不认为这群粗鄙的生物值得成为文明的一员，于是他们称兽人为低贱的【魔种】，用武力奴役【魔种】来作为苦力。</p><h2 id="人类"><a href="#人类" class="headerlink" title="人类"></a>人类</h2><p>【神】觉得只有苦力已然不够，于是他们又创造了【人类】</p><h2 id="神职者"><a href="#神职者" class="headerlink" title="神职者"></a>神职者</h2><p>人类中选拔出一些出类拔萃的进行身体改造和强化，其中改造成功的，成为【神职者】</p><h2 id="【魔道】族人"><a href="#【魔道】族人" class="headerlink" title="【魔道】族人"></a>【魔道】族人</h2><p>改造失败的，便被重新分放到普通人群中，虽是“改造残次品”，但仍拥有超越常人的天赋和能力，被称为【魔道】族人</p><h2 id="神之战"><a href="#神之战" class="headerlink" title="神之战"></a>神之战</h2><p>女娲和帝俊之间的战争。</p><p>结束后几乎所有的神都丧命，只有奄奄一息的女娲。</p><p>帝俊也没死，在潜伏</p><h1 id="3000年后"><a href="#3000年后" class="headerlink" title="*3000年后*"></a><em><strong>*3000年后*</strong></em></h1><h2 id="阻止帝俊势力"><a href="#阻止帝俊势力" class="headerlink" title="阻止帝俊势力"></a>阻止帝俊势力</h2><p>三分之地</p><p>河洛之畔</p><p>稷下学院长安</p><p>稷下学院长城</p><h2 id="帝俊制造的事件"><a href="#帝俊制造的事件" class="headerlink" title="帝俊制造的事件"></a>帝俊制造的事件</h2><p>海都的污染</p><p>云中漠地的魔种之乱</p><p>陷害苏烈</p><p>夜闯长安城</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 调研 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关卡协助叙事</title>
       <link href="/2023/08/31/%E5%85%B3%E5%8D%A1%E5%8D%8F%E5%8A%A9%E5%8F%99%E4%BA%8B/"/>
       <url>/2023/08/31/%E5%85%B3%E5%8D%A1%E5%8D%8F%E5%8A%A9%E5%8F%99%E4%BA%8B/</url>
@@ -687,9 +756,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
       
@@ -698,9 +767,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
       
